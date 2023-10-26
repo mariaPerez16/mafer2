@@ -1,0 +1,38 @@
++++PARSEO+++:
+
+Modelo: WS-C3650-24TS 
+Numero de serie: FDO1839E20Q
+Numero de parte: WS-C3650-24TS
+Version: 03.03.03SE
+Hostname: 56L-KIO-SWST01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+Modulo: Power Supply A
+Descripcion: Switch 1 - Power Supply A
+PID: PWR-C2-250WAC
+Numero de serie: LIT18071758
+
+Informacion power supply 2
+Modulo: Power Supply B
+Descripcion: Switch 1 - Power Supply B
+PID: PWR-C2-250WAC
+Numero de serie: LIT180717V2
+
+
+Cantidad de ventiladores es 2 en el equipo WS-C3650-24TS 
+
+Informacion ventilador 1
+Modulo: FAN 1
+Modelo: WS-C3650-24TS 
+
+Informacion ventilador 2
+Modulo: FAN 2
+Modelo: WS-C3650-24TS 
+
+
+Cantidad de modulos es 0 en el equipo WS-C3650-24TS 
+
+
+

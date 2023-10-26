@@ -1,0 +1,433 @@
+root@back-discoverit:~# ssh careit@10.35.0.6
+(careit@10.35.0.6) password:
+RI1-KIO-SWCO04_IXC>sho
+RI1-KIO-SWCO04_IXC>show idp
+RI1-KIO-SWCO04_IXC>show idprom all
+                               ^
+% Invalid input detected at '^' marker.
+
+RI1-KIO-SWCO04_IXC>show idprom ?
+% Unrecognized command
+RI1-KIO-SWCO04_IXC>show idprom
+% Incomplete command.
+
+RI1-KIO-SWCO04_IXC>show idprom ?
+% Unrecognized command
+RI1-KIO-SWCO04_IXC>show envi
+RI1-KIO-SWCO04_IXC>show enviro
+RI1-KIO-SWCO04_IXC>show enviro
+RI1-KIO-SWCO04_IXC>show module
+                          ^
+% Invalid input detected at '^' marker.
+
+RI1-KIO-SWCO04_IXC>show module ?
+% Unrecognized command
+RI1-KIO-SWCO04_IXC>show ver
+RI1-KIO-SWCO04_IXC>show version
+Cisco IOS Software, C3750E Software (C3750E-UNIVERSALK9-M), Version 15.0(2)SE5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2013 by Cisco Systems, Inc.
+Compiled Fri 25-Oct-13 12:38 by prod_rel_team
+
+ROM: Bootstrap program is C3750E boot loader
+BOOTLDR: C3750E Boot Loader (C3750X-HBOOT-M) Version 12.2(58r)SE1, RELEASE SOFTWARE (fc1)
+
+RI1-KIO-SWCO04_IXC uptime is 2 years, 48 weeks, 1 day, 14 hours, 57 minutes
+System returned to ROM by power-on
+System restarted at 22:29:14 UTC Sun May 3 2020
+System image file is "flash:/c3750e-universalk9-mz.150-2.SE5/c3750e-universalk9-mz.150-2.SE5.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: ipservices
+License Type: Permanent
+Next reload license Level: ipservices
+
+cisco WS-C3750X-48 (PowerPC405) processor (revision A0) with 262144K bytes of memory.
+Processor board ID FDO1746R1UP
+Last reset from power-on
+17 Virtual Ethernet interfaces
+1 FastEthernet interface
+52 Gigabit Ethernet interfaces
+2 Ten Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+512K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : A8:0C:0D:82:89:00
+Motherboard assembly number     : 73-12552-10
+Motherboard serial number       : FDO174619WN
+Model revision number           : A0
+Motherboard revision number     : C0
+Model number                    : WS-C3750X-48T-E
+Daughterboard assembly number   : 800-32727-03
+Daughterboard serial number     : FDO17460XZW
+System serial number            : FDO1746R1UP
+Top Assembly Part Number        : 800-31326-08
+Top Assembly Revision Number    : D0
+Version ID                      : V05
+CLEI Code Number                : COMJT00ARE
+Hardware Board Revision Number  : 0x05
+
+
+Switch Ports Model              SW Version            SW Image
+------ ----- -----              ----------            ----------
+*    1 54    WS-C3750X-48       15.0(2)SE5            C3750E-UNIVERSALK9-M
+
+
+Configuration register is 0xF
+
+RI1-KIO-SWCO04_IXC>show ?
+  aaa                Show AAA values
+  adjacency          Adjacent nodes
+  arp                ARP table
+  auto               Show Automation Template
+  bgp                BGP information
+  call-home          Show command for call home
+  capability         Capability Information
+  cca                CCA information
+  class-map          Show CPL Class Map
+  clock              Display the system clock
+  cns                CNS agents
+  controllers        Interface controller status
+  crypto             Encryption module
+  dampening          Display dampening information
+  device-sensor      Shows Device Sensor Information
+  diagnostic         Show command for diagnostic
+  dot1q-tunnel       Display dot1q tunnel ports
+  dot1x              Dot1x information
+  eee                Show Energy Efficient Ethernet
+  eigrp              EIGRP show commands
+  env                Environmental facilities
+  epm                EPM information
+  errdisable         Error disable
+  etherchannel       EtherChannel information
+  event-manager      Event manager information
+  exception          exception informations
+  facility-alarm     Show Facility Alarms
+  fips               FIPS information
+  flash1:            display information about flash1: file system
+  flash:             display information about flash: file system
+  flow-sampler       Display the flow samplers configured
+  flowcontrol        show flow control information
+  format             Show format information
+  fstage:            display information about fstage: file system
+  hosts              IP domain-name, lookup style, nameservers, and host table
+  idprom             show IDPROMs for interfaces
+  if-mgr             if-mgr information
+  inventory          Show the physical inventory
+  ip                 IP information
+  ipc                Interprocess communications commands
+  ipv6               IPv6 information
+  kerberos           Show Kerberos Values
+  kron               Kron Subsystem
+  l2                 Layer 2
+
+RI1-KIO-SWCO04_IXC>show env ra
+RI1-KIO-SWCO04_IXC>show env ?
+  all          Show all environment status
+  fan          Show fan status
+  power        Show power supply status
+  rps          Show RPS status
+  stack        Show Stack-wide all environment status
+  temperature  Show temperature status
+
+RI1-KIO-SWCO04_IXC>show env all
+FAN 1 is OK
+FAN 2 is OK
+FAN PS-1 is OK
+FAN PS-2 is OK
+SYSTEM TEMPERATURE is OK
+System Temperature Value: 25 Degree Celsius
+System Temperature State: GREEN
+Yellow Threshold : 46 Degree Celsius
+Red Threshold    : 60 Degree Celsius
+SW  PID                 Serial#     Status           Sys Pwr  PoE Pwr  Watts
+---  ------------------  ----------  ---------------  -------  -------  -----
+1A  C3KX-PWR-350WAC     LIT17361RR2 OK              Good     Good     350/0
+1B  C3KX-PWR-350WAC     LIT17361RLN OK              Good     Good     350/0
+
+SW  Status          RPS Name          RPS Serial#  RPS Port#
+--  -------------   ----------------  -----------  ---------
+1   Not Present     <>
+
+
+RI1-KIO-SWCO04_IXC>show inve
+RI1-KIO-SWCO04_IXC>show inventory
+NAME: "1", DESCR: "WS-C3750X-48"
+PID: WS-C3750X-48T-E   , VID: V05  , SN: FDO1746R1UP
+
+NAME: "Switch 1 - Power Supply 0", DESCR: "FRU Power Supply"
+PID: C3KX-PWR-350WAC   , VID: V03L , SN: LIT17361RR2
+
+NAME: "Switch 1 - Power Supply 1", DESCR: "FRU Power Supply"
+PID: C3KX-PWR-350WAC   , VID: V03L , SN: LIT17361RLN
+
+NAME: "Switch 1 - FRULink Slot 1 - FRULink Module", DESCR: "FRULink 1G Module"
+PID: C3KX-NM-1G        , VID: V01  , SN: FDO17481UW7
+
+NAME: "GigabitEthernet1/1/1", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS14121GAD
+
+NAME: "GigabitEthernet1/1/2", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS14121GAK
+
+NAME: "GigabitEthernet1/1/3", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS141304HG
+
+NAME: "GigabitEthernet1/1/4", DESCR: "1000BaseSX SFP"
+PID: GLC-SX-MMD          , VID: V01  , SN: AGA1740R6R9
+
+
+RI1-KIO-SWCO04_IXC>show inventory raw
+NAME: "Cat37xx Stacking", DESCR: "Catalyst 37xx Switch Stack"
+PID:                   , VID:      , SN:
+
+NAME: "1", DESCR: "WS-C3750X-48"
+PID: WS-C3750X-48T-E   , VID: V05  , SN: FDO1746R1UP
+
+NAME: "Switch 1 - Fan Container", DESCR: "Fan Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Fan 0", DESCR: "Switch FRU Fan"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Fan 1", DESCR: "Switch FRU Fan"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Power Supply Container", DESCR: "Power Supply Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Power Supply 0", DESCR: "FRU Power Supply"
+PID: C3KX-PWR-350WAC   , VID: V03L , SN: LIT17361RR2
+
+NAME: "Switch 1 - Power Supply 1", DESCR: "FRU Power Supply"
+PID: C3KX-PWR-350WAC   , VID: V03L , SN: LIT17361RLN
+
+NAME: "Switch 1 - RPS Container", DESCR: "RPS Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - WS-C3750X-48 - Sensor 0", DESCR: "Switch 1 - WS-C3750X-48 - Sensor 0"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - WS-C3750X-48 - Fixed Module 0", DESCR: "Switch 1 - WS-C3750X-48 - Fixed Module 0"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - FRULink Slot 1", DESCR: "FRULink Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - FRULink Slot 1 - FRULink Module", DESCR: "FRULink 1G Module"
+PID: C3KX-NM-1G        , VID: V01  , SN: FDO17481UW7
+
+NAME: "GigabitEthernet1/1/1 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/1/1", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS14121GAD
+
+NAME: "GigabitEthernet1/1/2 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/1/2", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS14121GAK
+
+NAME: "GigabitEthernet1/1/3 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/1/3", DESCR: "1000BaseSX SFP"
+PID:                   , VID:      , SN: FNS141304HG
+
+NAME: "GigabitEthernet1/1/4 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/1/4", DESCR: "1000BaseSX SFP"
+PID: GLC-SX-MMD          , VID: V01  , SN: AGA1740R6R9
+
+NAME: "Gi1/1/4 Module Temperature Sensor", DESCR: "GigabitEthernet1/1/4 Module Temperature Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Gi1/1/4 Supply Voltage Sensor", DESCR: "GigabitEthernet1/1/4 Supply Voltage Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Gi1/1/4 Bias Current Sensor", DESCR: "GigabitEthernet1/1/4 Bias Current Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Gi1/1/4 Transmit Power Sensor", DESCR: "GigabitEthernet1/1/4 Transmit Power Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Gi1/1/4 Receive Power Sensor", DESCR: "GigabitEthernet1/1/4 Receive Power Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "StackPort1", DESCR: "StackPort1"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/1", DESCR: "GigabitEthernet1/0/1"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/2", DESCR: "GigabitEthernet1/0/2"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/3", DESCR: "GigabitEthernet1/0/3"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/4", DESCR: "GigabitEthernet1/0/4"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/5", DESCR: "GigabitEthernet1/0/5"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/6", DESCR: "GigabitEthernet1/0/6"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/7", DESCR: "GigabitEthernet1/0/7"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/8", DESCR: "GigabitEthernet1/0/8"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/9", DESCR: "GigabitEthernet1/0/9"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/10", DESCR: "GigabitEthernet1/0/10"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/11", DESCR: "GigabitEthernet1/0/11"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/12", DESCR: "GigabitEthernet1/0/12"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/13", DESCR: "GigabitEthernet1/0/13"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/14", DESCR: "GigabitEthernet1/0/14"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/15", DESCR: "GigabitEthernet1/0/15"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/16", DESCR: "GigabitEthernet1/0/16"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/17", DESCR: "GigabitEthernet1/0/17"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/18", DESCR: "GigabitEthernet1/0/18"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/19", DESCR: "GigabitEthernet1/0/19"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/20", DESCR: "GigabitEthernet1/0/20"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/21", DESCR: "GigabitEthernet1/0/21"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/22", DESCR: "GigabitEthernet1/0/22"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/23", DESCR: "GigabitEthernet1/0/23"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/24", DESCR: "GigabitEthernet1/0/24"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/25", DESCR: "GigabitEthernet1/0/25"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/26", DESCR: "GigabitEthernet1/0/26"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/27", DESCR: "GigabitEthernet1/0/27"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/28", DESCR: "GigabitEthernet1/0/28"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/29", DESCR: "GigabitEthernet1/0/29"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/30", DESCR: "GigabitEthernet1/0/30"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/31", DESCR: "GigabitEthernet1/0/31"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/32", DESCR: "GigabitEthernet1/0/32"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/33", DESCR: "GigabitEthernet1/0/33"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/34", DESCR: "GigabitEthernet1/0/34"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/35", DESCR: "GigabitEthernet1/0/35"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/36", DESCR: "GigabitEthernet1/0/36"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/37", DESCR: "GigabitEthernet1/0/37"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/38", DESCR: "GigabitEthernet1/0/38"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/39", DESCR: "GigabitEthernet1/0/39"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/40", DESCR: "GigabitEthernet1/0/40"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/41", DESCR: "GigabitEthernet1/0/41"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/42", DESCR: "GigabitEthernet1/0/42"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/43", DESCR: "GigabitEthernet1/0/43"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/44", DESCR: "GigabitEthernet1/0/44"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/45", DESCR: "GigabitEthernet1/0/45"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/46", DESCR: "GigabitEthernet1/0/46"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/47", DESCR: "GigabitEthernet1/0/47"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/0/48", DESCR: "GigabitEthernet1/0/48"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - FastEthernet0", DESCR: "FastEthernet0"
+PID:                   , VID:      , SN:
+
+
+RI1-KIO-SWCO04_IXC>show idpro
+RI1-KIO-SWCO04_IXC>show idprom
+% Incomplete command.
+
+RI1-KIO-SWCO04_IXC>show idprom ?
+% Unrecognized command
+RI1-KIO-SWCO04_IXC>exi
+Connection to 10.35.0.6 closed.
+root@back-discoverit:~#

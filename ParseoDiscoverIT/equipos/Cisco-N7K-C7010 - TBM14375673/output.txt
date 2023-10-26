@@ -1,0 +1,371 @@
+
+root@back-discoverit:~#
+root@back-discoverit:~# ssh careit@10.5.3.138
+C
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+SERVICIOS DE TECNOLOGIAS DE INFORMACION
+DE MISION CRITICA
+WE LOVE IT!!!  GO BIG!!!
+(careit@10.5.3.138) Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+56A-KIO-SWAG01#
+56A-KIO-SWAG01#
+56A-KIO-SWAG01# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+
+Software
+  BIOS:      version 3.22.0
+  kickstart: version 6.2(14)
+  system:    version 6.2(14)
+  BIOS compile time:       02/20/10
+  kickstart image file is: bootflash:///n7000-s1-kickstart.6.2.14.bin
+  kickstart compile time:  7/27/2015 9:00:00 [08/27/2015 17:41:26]
+  system image file is:    bootflash:///n7000-s1-dk9.6.2.14.bin
+  system compile time:     7/27/2015 9:00:00 [08/27/2015 19:31:27]
+
+
+Hardware
+  cisco Nexus7000 C7010 (10 Slot) Chassis ("Supervisor Module-1X")
+  Intel(R) Xeon(R) CPU         with 8260692 kB of memory.
+  Processor Board ID JAF1444BLJH
+
+  Device name: 56A-KIO-SWAG01
+  bootflash:    2000880 kB
+  slot0:              0 kB (expansion flash)
+
+Kernel uptime is 423 day(s), 17 hour(s), 41 minute(s), 46 second(s)
+
+Last reset
+  Reason: Unknown
+  System version: 6.2(14)
+  Service:
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+
+CMP (Module 5) ok
+ CMP Software
+  CMP BIOS version:        02.01.05
+  CMP Image version:       5.2(1) [build 5.0(0.66)]
+  CMP BIOS compile time:   8/ 4/2008 19:39:40
+  CMP Image compile time:  6/7/2011 13:00:00
+
+CMP (Module 6) ok
+ CMP Software
+  CMP BIOS version:        02.01.05
+  CMP Image version:       5.2(1) [build 5.0(0.66)]
+  CMP BIOS compile time:   8/ 4/2008 19:39:40
+  CMP Image compile time:  6/7/2011 13:00:00
+
+56A-KIO-SWAG01#
+56A-KIO-SWAG01# show inventory
+NAME: "Chassis",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis "
+PID: N7K-C7010           ,  VID: V02 ,  SN: TBM14375673
+
+NAME: "Slot 1",  DESCR: "10 Gbps Ethernet XL Module"
+PID: N7K-M108X2-12L      ,  VID: V02 ,  SN: JAF1444APJP
+
+NAME: "Slot 2",  DESCR: "10 Gbps Ethernet XL Module"
+PID: N7K-M108X2-12L      ,  VID: V02 ,  SN: JAF1444CGSJ
+
+NAME: "Slot 3",  DESCR: "10 Gbps Ethernet Module"
+PID: N7K-M132XP-12       ,  VID: V10 ,  SN: JAF1512BPAH
+
+NAME: "Slot 4",  DESCR: "1/10 Gbps Ethernet Module"
+PID: N7K-F132XP-15       ,  VID: V04 ,  SN: JAF1729AKPD
+
+NAME: "Slot 5",  DESCR: "Supervisor Module-1X"
+PID: N7K-SUP1            ,  VID: V11 ,  SN: JAF1444BLJH
+
+NAME: "Slot 6",  DESCR: "Supervisor Module-1X"
+PID: N7K-SUP1            ,  VID: V11 ,  SN: JAF1444BLMM
+
+NAME: "Slot 7",  DESCR: "10 Gbps Ethernet Module"
+PID: N7K-M132XP-12       ,  VID: V08 ,  SN: JAF1430FHAL
+
+NAME: "Slot 11",  DESCR: "Fabric card module"
+PID: N7K-C7010-FAB-1     ,  VID: V04 ,  SN: JAF1443AJEA
+
+NAME: "Slot 12",  DESCR: "Fabric card module"
+PID: N7K-C7010-FAB-1     ,  VID: V04 ,  SN: JAF1443AJHK
+
+NAME: "Slot 13",  DESCR: "Fabric card module"
+PID: N7K-C7010-FAB-1     ,  VID: V04 ,  SN: JAF1443AJKS
+
+NAME: "Slot 33",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Power Supply"
+PID: N7K-AC-6.0KW        ,  VID: V04 ,  SN: DTM133904GN
+
+NAME: "Slot 34",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Power Supply"
+PID: N7K-AC-6.0KW        ,  VID: V05 ,  SN: DTM1939011Z
+
+NAME: "Slot 35",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Power Supply"
+PID: N7K-AC-6.0KW        ,  VID: V03 ,  SN: DTM171101ZY
+
+NAME: "Slot 36",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Fan Module"
+PID: N7K-C7010-FAN-S     ,  VID: V01 ,  SN: FOX1433XAQ2
+
+NAME: "Slot 37",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Fan Module"
+PID: N7K-C7010-FAN-S     ,  VID: V01 ,  SN: FOX1433XAL6
+
+NAME: "Slot 38",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Fan Module"
+PID: N7K-C7010-FAN-F     ,  VID: V02 ,  SN: FOX1434XB00
+
+NAME: "Slot 39",  DESCR: "Nexus7000 C7010 (10 Slot) Chassis Fan Module"
+PID: N7K-C7010-FAN-F     ,  VID: V02 ,  SN: FOX1432XA5T
+
+56A-KIO-SWAG01#
+56A-KIO-SWAG01#
+56A-KIO-SWAG01#
+56A-KIO-SWAG01# show module
+Mod  Ports  Module-Type                         Model              Status
+---  -----  ----------------------------------- ------------------ ----------
+1    8      10 Gbps Ethernet XL Module          N7K-M108X2-12L     ok
+2    8      10 Gbps Ethernet XL Module          N7K-M108X2-12L     ok
+3    32     10 Gbps Ethernet Module             N7K-M132XP-12      ok
+4    32     1/10 Gbps Ethernet Module           N7K-F132XP-15      ok
+5    0      Supervisor Module-1X                N7K-SUP1           active *
+6    0      Supervisor Module-1X                N7K-SUP1           ha-standby
+7    32     10 Gbps Ethernet Module             N7K-M132XP-12      ok
+
+Mod  Sw              Hw
+---  --------------  ------
+1    6.2(14)         1.1
+2    6.2(14)         1.1
+3    6.2(14)         2.0
+4    6.2(14)         1.1
+5    6.2(14)         1.8
+6    6.2(14)         1.8
+7    6.2(14)         1.8
+
+
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    c4-71-fe-0e-5a-90 to c4-71-fe-0e-5a-9b  JAF1444APJP
+2    c4-71-fe-1b-d1-a0 to c4-71-fe-1b-d1-ab  JAF1444CGSJ
+3    40-55-39-90-a8-1c to 40-55-39-90-a8-3f  JAF1512BPAH
+4    4c-00-82-b6-59-10 to 4c-00-82-b6-59-53  JAF1729AKPD
+5    b4-14-89-d3-86-d8 to b4-14-89-d3-86-df  JAF1444BLJH
+6    b4-14-89-d3-84-88 to b4-14-89-d3-84-8f  JAF1444BLMM
+7    f8-66-f2-74-fc-b8 to f8-66-f2-74-fc-db  JAF1430FHAL
+
+Mod  Online Diag Status
+---  ------------------
+1    Pass
+2    Pass
+3    Fail
+4    Pass
+5    Pass
+6    Pass
+7    Pass
+
+Xbar Ports  Module-Type                         Model              Status
+---  -----  ----------------------------------- ------------------ ----------
+1    0      Fabric Module 1                     N7K-C7010-FAB-1    ok
+2    0      Fabric Module 1                     N7K-C7010-FAB-1    ok
+3    0      Fabric Module 1                     N7K-C7010-FAB-1    ok
+
+Xbar Sw              Hw
+---  --------------  ------
+1    NA              1.1
+2    NA              1.1
+3    NA              1.1
+
+
+
+Xbar MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    NA                                      JAF1443AJEA
+2    NA                                      JAF1443AJHK
+3    NA                                      JAF1443AJKS
+
+* this terminal session
+56A-KIO-SWAG01#
+56A-KIO-SWAG01#
+56A-KIO-SWAG01#
+56A-KIO-SWAG01# show F
+Feature       Feature-set   File          Fips          Forwarding
+56A-KIO-SWAG01# show run
+
+!Command: show running-config
+!Time: Tue Apr 11 17:25:56 2023
+
+version 6.2(14)
+power redundancy-mode ps-redundant
+
+hostname 56A-KIO-SWAG01
+no system admin-vdc
+vdc 56A-KIO-SWAG01 id 1
+  limit-resource module-type m1 f1 m1xl m2xl
+  allocate interface Ethernet1/4-8
+  allocate interface Ethernet2/5-8
+  allocate interface Ethernet4/5-6,Ethernet4/23-24,Ethernet4/27-28
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 1000
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 96 maximum 96
+  limit-resource u6route-mem minimum 24 maximum 24
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+vdc 56A-KIO-SWAG03 id 2
+  limit-resource module-type m1 f1 m1xl m2xl
+  allocate interface Ethernet1/1-3
+  allocate interface Ethernet2/1-4
+  allocate interface Ethernet3/1-24
+  allocate interface Ethernet4/1-4,Ethernet4/7-22
+  allocate interface Ethernet7/1-24
+  boot-order 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 1000
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 8 maximum 8
+  limit-resource u6route-mem minimum 4 maximum 4
+  limit-resource m4route-mem minimum 8 maximum 8
+  limit-resource m6route-mem minimum 5 maximum 5
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+vdc 56A-KIO-SWAG05 id 4
+  limit-resource module-type m1 f1 m1xl m2xl
+  allocate interface Ethernet3/25-32
+  allocate interface Ethernet4/25-26,Ethernet4/29-32
+  allocate interface Ethernet7/25-32
+  boot-order 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 1000
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 8 maximum 8
+  limit-resource u6route-mem minimum 4 maximum 4
+  limit-resource m4route-mem minimum 8 maximum 8
+  limit-resource m6route-mem minimum 5 maximum 5
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+
+feature tacacs+
+
+logging level pixm 2
+username admin password 5 $1$aR6e2Rqd$7H6u9c8mR5ZybBhWLqrcU0  role network-admin
+username admin role vdc-admin
+username bck password 5 $1$uZFaUC7r$FqXNuOc0Hio1DXNmM.Iet1  role network-admin
+username bck role vdc-admin
+username arioshlocal password 5 $1$EJot$U0Ov8XpBnUUggQaH9GfHG1  role network-admin
+username arioshlocal role vdc-admin
+username jgutierrezlocal password 5 $1$uMiW$eT6Qe28uuHpyhu2v6gOkX0  role network-admin
+username jgutierrezlocal role vdc-admin
+username gferrerlocal password 5 $1$w4la$7y4mfHutsCWWLT5mAnMNZ/  role network-admin
+username gferrerlocal role vdc-admin
+
+banner motd ^C
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+SERVICIOS DE TECNOLOGIAS DE INFORMACION
+DE MISION CRITICA
+WE LOVE IT!!!  GO BIG!!!
+^
+
+no ip domain-lookup
+tacacs-server host 10.5.2.110 key 7 "$4g5C10%" timeout 15
+tacacs-server host 10.5.4.110 key 7 "$4g5C10%" timeout 15
+aaa group server tacacs+ ISE
+    server 10.5.2.110
+    server 10.5.4.110
+    use-vrf management
+    source-interface mgmt0
+crypto key param rsa label 56A-KIO-SWAG01 modulus 1024
+ip access-list 6
+  10 remark ACL para SNMP Cisco Prime Infrastructure
+  20 permit ip 10.5.1.17/32 10.5.3.138/32
+  30 permit ip 10.5.2.17/32 10.5.3.138/32
+  40 permit ip 10.5.2.24/32 10.5.3.138/32
+  50 permit ip 10.51.33.27/32 10.5.3.138/32
+  60 permit ip 10.51.33.30/32 10.5.3.138/32
+  70 permit ip 10.5.1.27/32 10.5.3.138/32
+  80 permit ip 10.5.4.0/25 10.5.3.138/32
+  90 permit ip 10.5.2.27/32 any
+  100 permit ip 10.64.5.95/32 10.5.3.138/32
+  110 permit ip 10.64.5.96/32 10.5.3.138/32
+  120 permit ip 10.51.48.5/32 10.5.3.138/32
+  130 permit ip 10.57.35.50/32 10.5.3.138/32
+  140 permit ip 10.51.48.19/32 10.5.3.138/32
+  150 permit ip 10.57.35.19/32 10.5.3.138/32
+  160 permit ip 10.54.5.95/32 10.5.3.138/32
+  170 permit ip 10.54.5.96/32 10.5.3.138/32
+  180 permit ip 10.51.33.22/32 any
+  190 permit ip 10.51.33.19/32 any
+  200 permit ip 10.51.33.17/32 any
+  210 permit ip 10.51.33.24/32 any
+  220 permit ip 10.51.33.23/32 any
+  230 permit ip 10.51.33.22/32 any
+ip access-list ALLOW_TRUSTED_SSH
+  10 deny tcp 10.5.0.0/24 any eq 22
+  20 permit tcp any any eq 22
+  30 deny ip any any
+ip access-list copp-system-acl-bgp
+  10 permit tcp any gt 1024 any eq bgp
+56A-KIO-SWAG01#

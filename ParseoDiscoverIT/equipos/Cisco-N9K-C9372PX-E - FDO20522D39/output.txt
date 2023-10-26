@@ -1,0 +1,341 @@
+root@back-discoverit:~# ssh careit@192.168.32.231
+
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+CURIOSITY ENHANCES DECISIONS
+CURIOSITY INCREASES YOUR KNOWLEDGE
+CURIOSITY CLEARS DOUBTS
+WE LOVE IT!!!
+
+careit@192.168.32.231's password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2016, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+RI1-KIO-SWST01# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2016, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.41
+  NXOS: version 7.0(3)I4(1)
+  BIOS compile time:  10/12/2015
+  NXOS image file is: bootflash:///nxos.7.0.3.I4.1.bin
+  NXOS compile time:  5/15/2016 20:00:00 [05/15/2016 22:24:30]
+
+
+Hardware
+  cisco Nexus9000 C9372PX chassis
+  Intel(R) Core(TM) i3- CPU @ 2.50GHz with 16401852 kB of memory.
+  Processor Board ID FDO20522D39
+
+  Device name: RI1-KIO-SWST01
+  bootflash:   53298520 kB
+Kernel uptime is 1909 day(s), 2 hour(s), 50 minute(s), 20 second(s)
+
+Last reset
+  Reason: Unknown
+  System version: 7.0(3)I4(1)
+  Service:
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+RI1-KIO-SWST01# show inventory
+NAME: "Chassis",  DESCR: "Nexus9000 C9372PX chassis"
+PID: N9K-C9372PX-E       ,  VID: V01 ,  SN: FDO20522D39
+
+NAME: "Slot 1",  DESCR: "48x1/10G SFP+ 6x40G Ethernet Module"
+PID: N9K-C9372PX-E       ,  VID: V01 ,  SN: FDO20522D39
+
+NAME: "Power Supply 1",  DESCR: "Nexus9000 C9372PX chassis Power Supply"
+PID: N9K-PAC-650W-B      ,  VID: V01 ,  SN: LIT20383A2H
+
+NAME: "Power Supply 2",  DESCR: "Nexus9000 C9372PX chassis Power Supply"
+PID: N9K-PAC-650W-B      ,  VID: V01 ,  SN: LIT20383A2F
+
+NAME: "Fan 1",  DESCR: "Nexus9000 C9372PX chassis Fan Module"
+PID: NXA-FAN-30CFM-F     ,  VID: V01 ,  SN: N/A
+
+NAME: "Fan 2",  DESCR: "Nexus9000 C9372PX chassis Fan Module"
+PID: NXA-FAN-30CFM-F     ,  VID: V01 ,  SN: N/A
+
+NAME: "Fan 3",  DESCR: "Nexus9000 C9372PX chassis Fan Module"
+PID: NXA-FAN-30CFM-F     ,  VID: V01 ,  SN: N/A
+
+NAME: "Fan 4",  DESCR: "Nexus9000 C9372PX chassis Fan Module"
+PID: NXA-FAN-30CFM-F     ,  VID: V01 ,  SN: N/A
+
+RI1-KIO-SWST01#
+RI1-KIO-SWST01# show module
+Mod Ports             Module-Type                       Model          Status
+--- ----- ------------------------------------- --------------------- ---------
+1    54   48x1/10G SFP+ 6x40G Ethernet Module   N9K-C9372PX-E         active *
+
+Mod  Sw                Hw     Slot
+---  ----------------  ------ ----
+1    7.0(3)I4(1)       1.0    NA
+
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    00-2c-c8-53-ac-98 to 00-2c-c8-53-ac-d5  FDO20522D39
+
+Mod  Online Diag Status
+---  ------------------
+1    Pass
+
+* this terminal session
+RI1-KIO-SWST01#
+RI1-KIO-SWST01#
+RI1-KIO-SWST01# show run
+
+!Command: show running-config
+!Time: Tue Apr 11 17:15:39 2023
+
+version 7.0(3)I4(1)
+hostname RI1-KIO-SWST01
+vdc RI1-KIO-SWST01 id 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 511
+  limit-resource u4route-mem minimum 248 maximum 248
+  limit-resource u6route-mem minimum 96 maximum 96
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+
+feature tacacs+
+cfs ipv4 distribute
+cfs eth distribute
+feature ospf
+feature udld
+feature interface-vlan
+feature hsrp
+feature lacp
+feature vpc
+feature lldp
+
+username admin password 5 $5$ibR4gJT1$cv91hJCEyluBXEJ9m4WzZMIFnNUAKUIM6RXuzOzj4U0  role network-admin
+username esalinas password 5 $5$hcInkl.c$z5mvRj/z/AitG/epPrYvZkNqY7f0y6L0rufUvYR.MfA  role network-admin
+username esalinas role vdc-admin
+username admin_redit password 5 $5$Thj9tc3E$0Q.dRVyzrKb0vKNccbbec330cKQkRhubbJhpntx5uK3  role network-operator
+username admin_redit role vdc-admin
+username rmuniz password 5 $5$81tK9AtJ$QtP.W2Yg803MfY19kctL5xReRerkqZrqAI0aWtuVQLC  role network-admin
+username alexis.ortiz password 5 $5$SedoYSuN$xT8VotKR6WcClVQbCfFMGUvOgTkmUThm0X63t1o8SjD  role network-admin
+
+banner motd ^
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+CURIOSITY ENHANCES DECISIONS
+CURIOSITY INCREASES YOUR KNOWLEDGE
+CURIOSITY CLEARS DOUBTS
+WE LOVE IT!!!
+
+^
+
+no ip domain-lookup
+ip domain-name kionetworks.com
+tacacs-server key 7 "$4g5C10%"
+tacacs-server host 10.5.2.110 key 7 "$4g5C10%" timeout 15
+tacacs-server host 10.5.4.110 key 7 "$4g5C10%" timeout 15
+aaa group server tacacs+ ACS
+aaa group server tacacs+ ISE
+    server 10.5.2.110
+    server 10.5.4.110
+radius-server host 172.28.20.129 key 7 "W7HT1IyH00JOavgn" authentication accounting
+aaa group server radius Kio_Networks
+    server 172.28.20.129
+ip access-list 1
+  10 remark ACL restringir lineas VTY
+  20 permit ip 10.5.4.0/24 any
+  30 permit ip 10.5.1.27/32 any
+  40 permit ip 10.5.1.17/32 any
+  50 permit ip 10.5.2.17/32 any
+  60 permit ip 10.5.1.18/32 any
+  70 permit ip 10.5.2.18/32 any
+  80 permit ip 10.5.1.253/32 any
+  90 permit ip 10.5.1.252/32 any
+  100 permit ip 10.5.2.252/32 any
+  110 permit ip 10.5.2.253/32 any
+  120 permit ip 10.5.3.253/32 any
+  130 permit ip 10.5.3.252/32 any
+  140 permit ip 10.51.33.30/32 any
+  150 permit ip 10.5.2.27/32 any
+  160 permit ip 172.28.146.8/32 any
+  170 permit ip 172.28.255.5/32 any
+  180 permit ip 172.28.255.6/32 any
+  190 permit ip 10.31.255.5/32 any
+  200 permit ip 10.31.255.6/32 any
+ip access-list 6
+  10 remark ACL SNMP Prime, Spectrum, Collector
+  20 permit ip 10.5.4.0 0.0.0.255 any
+  30 permit ip 10.51.33.27/32 any
+  40 permit ip 10.51.33.30/32 any
+  50 permit ip 10.5.2.24/32 any
+  60 permit ip 10.5.1.27/32 any
+  70 permit ip 10.5.4.22/32 any
+  80 permit ip 10.5.2.27/32 any
+  100 permit ip 172.28.255.5/32 any
+  110 permit ip 172.28.255.6/32 any
+  120 permit ip 10.31.255.5/32 any
+  130 permit ip 10.31.255.6/32 any
+  140 permit ip 10.64.5.95/32 any
+  150 permit ip 10.64.5.96/32 any
+copp profile strict
+snmp-server user admin network-admin auth md5 0x1ac63dc3346271b16ac9243d006f9faf priv 0x1ac63dc3346271b16ac9243d006f9faf localizedkey
+snmp-server user rmuniz network-admin auth md5 0x449e6e11e90d95ab5f4627eaaade97fd priv 0x449e6e11e90d95ab5f4627eaaade97fd localizedkey
+snmp-server user esalinas network-admin auth md5 0x03e6a56040a7ee20b685c412c48b0546 priv 0x03e6a56040a7ee20b685c412c48b0546 localizedkey
+snmp-server user esalinas vdc-admin
+snmp-server user admin_redit network-operator auth md5 0xad4d6db59ca2682513900c5615336478 priv 0xad4d6db59ca2682513900c5615336478 localizedkey
+snmp-server user admin_redit vdc-admin
+snmp-server user alexis.ortiz network-admin auth md5 0x47767179250e93ec898e4ea643565c9a priv 0x47767179250e93ec898e4ea643565c9a localizedkey
+snmp-server host 10.51.33.27 traps version 2c !n55-t34m#
+snmp-server host 10.51.33.30 traps version 2c !n55-t34m#
+snmp-server host 10.5.4.6 traps version 2c !K10d1D4t4#
+snmp-server host 172.28.146.8 traps version 2c !n55-t34m#
+snmp-server host 172.28.255.5 traps version 2c !n55-t34m#
+snmp-server host 172.28.255.6 traps version 2c !n55-t34m#
+snmp-server host 10.31.255.5 traps version 2c !n55-t34m#
+snmp-server host 10.31.255.6 traps version 2c !n55-t34m#
+snmp-server host 10.64.5.95 traps version 2c !n55-t34m#
+rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+snmp-server community !K10d1D4t4# group network-operator
+snmp-server community N55-M1dl3m4rK3t group network-admin
+snmp-server community !n55-t34m# group network-admin
+aaa authentication login default group ISE local
+aaa authentication login console local
+aaa authorization config-commands default group ACS ISE local
+aaa authorization commands default group ISE local
+aaa accounting default group ISE
+aaa authentication login error-enable
+
+vlan 1,49,51,930,1071
+vlan 49
+  name RPN_Admin
+vlan 51
+  name Produccion
+vlan 930
+  name Admin_Storage_Catalyst
+vlan 1071
+  name BCK_STORAGE_SSH
+
+vrf context Peer_Keep_Alive
+  description Peer_Keep_Alive_Link
+  address-family ipv4 unicast
+vrf context management
+vpc domain 100
+  peer-switch
+  role priority 1
+  peer-keepalive destination 10.10.1.2 source 10.10.1.1 vrf Peer_Keep_Alive
+  auto-recovery
+  ip arp synchronize
+
+interface Vlan1
+
+interface Vlan49
+  description RPN_Admin_VLAN
+  no shutdown
+  ip address 192.168.32.231/24
+  hsrp version 2
+  hsrp 100
+    name mgmt_&_peerKeepAlive_9k
+    timers  1  3
+    ip 192.168.32.230
+
+interface Vlan930
+  description Admin_Storage_Catalyst_GW
+  no shutdown
+  ip address 10.103.0.253/24
+  hsrp version 2
+  hsrp 101
+    name Admin_Storage_Catalyst_GW
+    timers  1  3
+    ip 10.103.0.254
+
+interface port-channel1
+RI1-KIO-SWST01#

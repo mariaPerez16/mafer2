@@ -1,0 +1,6 @@
+Parseando cisco ....
+['WS-C3650-24TS']
+Modelo: ['WS-C3650-24TS']
+ Numero de serie: ['FDO2112E2AJ']
+ Numero de parte: ['WS-C3650-24TS']
+ version: ['03.06.06E', '2.0.', '2.0', '2.0.', '3.56']

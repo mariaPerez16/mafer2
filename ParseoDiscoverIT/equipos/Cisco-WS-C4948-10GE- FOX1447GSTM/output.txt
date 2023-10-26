@@ -1,0 +1,238 @@
+root@back-discoverit:~# ssh careit@10.5.3.253
+C
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+(careit@10.5.3.253) password:
+C
+_/   _/  _/_/_/_/   _/_/_/_/
+_/  _/       _/     _/    _/
+_/ _/        _/     _/    _/
+_/_/         _/     _/    _/
+_/  _/       _/     _/    _/
+_/    _/     _/     _/    _/
+_/      _/ _/_/_/_/ _/_/_/_/
+_/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+_/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+_/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+_/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+_/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+_/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+SERVICIOS DE TECNOLOGIAS DE INFORMACION
+DE MISION CRITICA
+WE LOVE IT!!! GO BIG!!!
+
+56A-KIO-SWMN01#show idpro
+56A-KIO-SWMN01#show idprom all
+Supervisor 1 Idprom :
+ Common Block Signature = 0xabab
+ Common Block Version = 1
+ Common Block Length = 144
+ Common Block Checksum = 3380
+ Idprom Size = 256
+ Block Count = 4
+ FRU Major Type = 0x4101
+ FRU Minor Type = 358
+ OEM String = Cisco
+ Product Number = WS-C4948-10GE
+ Serial Number = FOX1447GSTM
+ Part Number = 73-9344-13
+ Part Revision = A0
+ Manufacturing Deviation String = 0
+ Hardware Revision = 3.9
+ Manufacturing Bits = 0x0000
+ Engineering Bits = 0x0000
+ Snmp OID = 0.0.0.0.0.0.0.0
+ Power Consumption = 0
+ RMA Failure Code = 0 0 0 0
+ Supervisor Block Signature = 0x4101
+ Supervisor Block Version = 1
+ Supervisor Block Length = 24
+ Supervisor Block Checksum = 1111
+ Feature Bits = 0x0000000000000000
+ Card Feature Index = 120
+ MAC Base = c89c.1d72.d180
+ MAC Count = 64
+ Clei Block Signature = 0x4601
+ Clei Block Version = 1
+ Clei Block Length = 22
+ Clei Block Checksum = 968
+ Clei code string = IPMHE10FRF
+ Version ID string = V11
+ SecSerialNum Block Signature = 0x4602
+ SecSerialNum Block Version = 1
+ SecSerialNum Block Length = 26
+ SecSerialNum Block Checksum = 763
+ SecSerialNum string = JAE15070AZ0
+
+Power Supply 1 Idprom :
+ Common Block Signature = 0xabab
+ Common Block Version = 2
+ Common Block Length = 124
+ Common Block Checksum = 4550
+ Idprom Size = 128
+ Block Count = 1
+ FRU Major Type = 0x4501
+ FRU Minor Type = 7
+ OEM String = Cisco Systems, Inc.
+ Product Number = PWR-C49-300AC
+ Serial Number = QCS1505B1T8
+ Part Number = 341-0103-04
+ Part Revision = A0
+ Manufacturing Deviation String =
+ Hardware Revision = 4.0
+ Power Consumption = 300
+ RMA Failure Code = 0 0 0 0
+
+Power Supply 2 Idprom :
+ Common Block Signature = 0xabab
+ Common Block Version = 2
+ Common Block Length = 124
+ Common Block Checksum = 4572
+ Idprom Size = 128
+ Block Count = 1
+ FRU Major Type = 0x4501
+ FRU Minor Type = 7
+ OEM String = Cisco Systems, Inc.
+ Product Number = PWR-C49-300AC
+ Serial Number = QCS1505B1UM
+ Part Number = 341-0103-04
+ Part Revision = A0
+ Manufacturing Deviation String =
+ Hardware Revision = 4.0
+ Power Consumption = 300
+ RMA Failure Code = 0 0 0 0
+
+56A-KIO-SWMN01#show idprom power-supply 1
+Power Supply 1 Idprom :
+ Common Block Signature = 0xabab
+ Common Block Version = 2
+ Common Block Length = 124
+ Common Block Checksum = 4550
+ Idprom Size = 128
+ Block Count = 1
+ FRU Major Type = 0x4501
+ FRU Minor Type = 7
+ OEM String = Cisco Systems, Inc.
+ Product Number = PWR-C49-300AC
+ Serial Number = QCS1505B1T8
+ Part Number = 341-0103-04
+ Part Revision = A0
+ Manufacturing Deviation String =
+ Hardware Revision = 4.0
+ Power Consumption = 300
+ RMA Failure Code = 0 0 0 0
+
+56A-KIO-SWMN01#show idprom cha
+56A-KIO-SWMN01#show idprom cha
+56A-KIO-SWMN01#show idprom ?
+  all           show all non-interface IDPROMs
+  interface     show contents of gbic connected to this interface
+  power-supply  show IDPROM for power supply
+  supervisor    show IDPROM for supervisor
+
+56A-KIO-SWMN01#show environment
+no alarm
+
+Chassis Temperature                    = 52 degrees Celsius
+Chassis Over Temperature Threshold     = 75 degrees Celsius
+Chassis Critical Temperature Threshold = 95 degrees Celsius
+
+Power                                             Fan      Inline
+Supply  Model No          Type       Status       Sensor   Status
+------  ----------------  ---------  -----------  -------  -------
+PS1     PWR-C49-300AC     AC 300W    good         good     n.a.
+PS2     PWR-C49-300AC     AC 300W    good         good     n.a.
+
+Power supplies needed by system    : 1
+Power supplies currently available : 2
+
+Chassis Type : WS-C4948-10GE
+
+Power consumed by backplane : 0 Watts
+
+Switch Bandwidth Utilization : 0%
+
+Supervisor Led Color : Orange
+
+Module  1 Status Led Color  : Orange
+
+Fantray : Bad
+Fantray removal timeout : 240
+
+Power consumed by Fantray : 30 Watts
+
+56A-KIO-SWMN01##show module
+56A-KIO-SWMN01##show version
+56A-KIO-SWMN01#show module
+Chassis Type : WS-C4948-10GE
+
+Power consumed by backplane : 0 Watts
+
+Mod Ports Card Type                              Model              Serial No.
+---+-----+--------------------------------------+------------------+-----------
+ 1    50  10/100/1000BaseT (RJ45), 10GE (X2) Sup WS-C4948-10GE      FOX1447GSTM
+
+ M MAC addresses                    Hw  Fw           Sw               Status
+--+--------------------------------+---+------------+----------------+---------
+ 1 c89c.1d72.d180 to c89c.1d72.d1b1 3.9 12.2(31r)SGA 15.0(2)SG11      Ok
+
+System Failures:
+----------------
+Fan Tray :      bad (see 'show environment')
+
+56A-KIO-SWMN01##show version
+56A-KIO-SWMN01#show version
+Cisco IOS Software, Catalyst 4500 L3 Switch Software (cat4500-ENTSERVICESK9-M), Version 15.0(2)SG11, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Mon 24-Oct-16 09:48 by prod_rel_team
+Image text-base: 0x10000000, data-base: 0x123AECA8
+
+ROM: 12.2(31r)SGA4
+Pod Revision 0, Force Revision 31, Gill Revision 19
+
+56A-KIO-SWMN01 uptime is 6 years, 17 weeks, 3 days, 13 hours, 8 minutes
+System returned to ROM by reload
+System restarted at 18:12:56 MEX Mon Dec 5 2016
+System image file is "bootflash:/cat4500-entservicesk9-mz.150-2.SG11.bin"
+Last reload reason: Reload command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C4948-10GE (MPC8540) processor (revision 5) with 262144K bytes of memory.
+Processor board ID FOX1447GSTM
+MPC8540 CPU at 667Mhz, Fixed Module
+Last reset from Reload
+10 Virtual Ethernet interfaces
+48 Gigabit Ethernet interfaces
+2 Ten Gigabit Ethernet interfaces
+511K bytes of non-volatile configuration memory.
+
+Configuration register is 0x2102
+
+56A-KIO-SWMN01#exi
+Connection to 10.5.3.253 closed by remote host.
+Connection to 10.5.3.253 closed.
+root@back-discoverit:~#

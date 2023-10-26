@@ -1,0 +1,308 @@
+
+root@back-discoverit:~# ssh careit@10.5.2.141
+User Access Verification
+(careit@10.5.2.141) Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+
+Software
+  BIOS:      version 2.12.0
+  kickstart: version 6.2(16)
+  system:    version 6.2(16)
+  BIOS compile time:       05/29/2013
+  kickstart image file is: bootflash:///n7000-s2-kickstart.6.2.16.bin
+  kickstart compile time:  1/27/2016 9:00:00 [04/05/2016 16:13:37]
+  system image file is:    bootflash:///n7000-s2-dk9.6.2.16.bin
+  system compile time:     1/27/2016 9:00:00 [04/05/2016 17:16:06]
+
+
+Hardware
+  cisco Nexus7000 C7009 (9 Slot) Chassis ("Supervisor Module-2")
+  Intel(R) Xeon(R) CPU         with 32745060 kB of memory.
+  Processor Board ID JAF1743APRP
+
+  Device name: QRK-KIO-SWAG01
+  bootflash:    2007040 kB
+  slot0:              0 kB (expansion flash)
+
+Kernel uptime is 1857 day(s), 18 hour(s), 7 minute(s), 35 second(s)
+
+Last reset
+  Reason: Unknown
+  System version: 6.2(16)
+  Service:
+
+plugin
+  Core Plugin, Ethernet Plugin
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01# show inventory
+NAME: "Chassis",  DESCR: "Nexus7000 C7009 (9 Slot) Chassis "
+PID: N7K-C7009           ,  VID: V01 ,  SN: JAF1735ADFE
+
+NAME: "Slot 1",  DESCR: "Supervisor Module-2"
+PID: N7K-SUP2E           ,  VID: V03 ,  SN: JAF1743APRP
+
+NAME: "Slot 2",  DESCR: "Supervisor Module-2"
+PID: N7K-SUP2E           ,  VID: V03 ,  SN: JAF1743AQKP
+
+NAME: "Slot 5",  DESCR: "1/10 Gbps Ethernet Module"
+PID: N7K-F248XP-25E      ,  VID: V01 ,  SN: JAF1715BFAS
+
+NAME: "Slot 7",  DESCR: "1/10 Gbps Ethernet Module"
+PID: N7K-F248XP-25E      ,  VID: V01 ,  SN: JAF1741ASRD
+
+NAME: "Slot 10",  DESCR: "Fabric card module"
+PID: N7K-C7009-FAB-2     ,  VID: V03 ,  SN: JAF1741BGTP
+
+NAME: "Slot 11",  DESCR: "Fabric card module"
+PID: N7K-C7009-FAB-2     ,  VID: V03 ,  SN: JAF1741BGNE
+
+NAME: "Slot 12",  DESCR: "Fabric card module"
+PID: N7K-C7009-FAB-2     ,  VID: V03 ,  SN: JAF1741BGNP
+
+NAME: "Slot 33",  DESCR: "Nexus7000 C7009 (9 Slot) Chassis Power Supply"
+PID: N7K-AC-6.0KW        ,  VID: V04 ,  SN: AZS1737008E
+
+NAME: "Slot 34",  DESCR: "Nexus7000 C7009 (9 Slot) Chassis Power Supply"
+PID: N7K-AC-6.0KW        ,  VID: V04 ,  SN: AZS1737008B
+
+NAME: "Slot 35",  DESCR: "Nexus7000 C7009 (9 Slot) Chassis Fan Module"
+PID: N7K-C7009-FAN       ,  VID: V01 ,  SN: JAF1733ASEB
+
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01# show module
+Mod  Ports  Module-Type                         Model              Status
+---  -----  ----------------------------------- ------------------ ----------
+1    0      Supervisor Module-2                 N7K-SUP2E          active *
+2    0      Supervisor Module-2                 N7K-SUP2E          ha-standby
+5    48     1/10 Gbps Ethernet Module           N7K-F248XP-25E     ok
+7    48     1/10 Gbps Ethernet Module           N7K-F248XP-25E     ok
+
+Mod  Sw              Hw
+---  --------------  ------
+1    6.2(16)         6.0
+2    6.2(16)         6.0
+5    6.2(16)         1.0
+7    6.2(16)         1.0
+
+
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    e4-c7-22-08-22-a0 to e4-c7-22-08-22-b2  JAF1743APRP
+2    e4-c7-22-07-d6-b3 to e4-c7-22-07-d6-c5  JAF1743AQKP
+5    84-78-ac-18-72-8c to 84-78-ac-18-72-bf  JAF1715BFAS
+7    e4-c7-22-05-c6-f4 to e4-c7-22-05-c7-27  JAF1741ASRD
+
+Mod  Online Diag Status
+---  ------------------
+1    Pass
+2    Pass
+5    Pass
+7    Pass
+
+Xbar Ports  Module-Type                         Model              Status
+---  -----  ----------------------------------- ------------------ ----------
+1    0      Fabric Module 2                     N7K-C7009-FAB-2    ok
+2    0      Fabric Module 2                     N7K-C7009-FAB-2    ok
+3    0      Fabric Module 2                     N7K-C7009-FAB-2    ok
+
+Xbar Sw              Hw
+---  --------------  ------
+1    NA              3.2
+2    NA              3.2
+3    NA              3.2
+
+
+
+Xbar MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    NA                                      JAF1741BGTP
+2    NA                                      JAF1741BGNE
+3    NA                                      JAF1741BGNP
+
+* this terminal session
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01#
+QRK-KIO-SWAG01# show Fex
+                       ^
+% Invalid command at '^' marker.
+QRK-KIO-SWAG01# show F
+Fabricpath    Fcoe_klm      Feature       Feature-set   File          Fips          Forwarding
+QRK-KIO-SWAG01# show Fabricpath
+                                ^
+% Incomplete command at '^' marker.
+QRK-KIO-SWAG01# show run
+
+!Command: show running-config
+!Time: Tue Apr 11 17:20:23 2023
+
+version 6.2(16)
+power redundancy-mode ps-redundant
+
+hostname QRK-KIO-SWAG01
+system admin-vdc
+install feature-set fabricpath
+vdc QRK-KIO-SWAG01 id 1
+  cpu-share 5
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 96 maximum 96
+  limit-resource u6route-mem minimum 24 maximum 24
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+vdc QRK-KIO-SWAG03 id 2
+  limit-resource module-type f2 f2e
+  allow feature-set fabricpath
+  cpu-share 5
+  allocate interface Ethernet5/1-8,Ethernet5/45-48
+  allocate interface Ethernet7/1-8,Ethernet7/45-48
+  boot-order 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 8 maximum 8
+  limit-resource u6route-mem minimum 4 maximum 4
+  limit-resource m4route-mem minimum 8 maximum 8
+  limit-resource m6route-mem minimum 5 maximum 5
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+vdc 2 id 3
+  limit-resource module-type f2 f2e
+  allow feature-set fabricpath
+  cpu-share 5
+  boot-order 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 8 maximum 8
+  limit-resource u6route-mem minimum 4 maximum 4
+  limit-resource m4route-mem minimum 8 maximum 8
+  limit-resource m6route-mem minimum 5 maximum 5
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+vdc 3 id 4
+  limit-resource module-type m1 f1 m1xl m2xl
+  allow feature-set fabricpath
+  cpu-share 5
+  boot-order 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource monitor-session minimum 0 maximum 2
+  limit-resource monitor-session-erspan-dst minimum 0 maximum 23
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 768
+  limit-resource u4route-mem minimum 8 maximum 8
+  limit-resource u6route-mem minimum 4 maximum 4
+  limit-resource m4route-mem minimum 8 maximum 8
+  limit-resource m6route-mem minimum 5 maximum 5
+  limit-resource monitor-session-inband-src minimum 0 maximum 1
+  limit-resource anycast_bundleid minimum 0 maximum 16
+  limit-resource monitor-session-mx-exception-src minimum 0 maximum 1
+  limit-resource monitor-session-extended minimum 0 maximum 12
+
+feature tacacs+
+
+username admin password 5 $1$k7pXoX2T$ol10raJuUAhVl/PCXZMWt1  role network-admin
+username admin role vdc-admin
+username bck password 5 $1$VuTZtV6A$bBxsRyzQMyzOryItqsYgf0  role network-admin
+username bck role vdc-admin
+username arioshlocal password 5 $1$EJot$U0Ov8XpBnUUggQaH9GfHG1  role network-admin
+username arioshlocal role vdc-admin
+username jgutierrezlocal password 5 $1$uMiW$eT6Qe28uuHpyhu2v6gOkX0  role network-admin
+username jgutierrezlocal role vdc-admin
+username gferrerlocal password 5 $1$w4la$7y4mfHutsCWWLT5mAnMNZ/  role network-admin
+username gferrerlocal role vdc-admin
+ip domain-lookup
+ip domain-name kionetworks.com
+ip name-server 200.77.231.205 200.77.237.246 200.77.227.157
+tacacs-server host 10.5.2.18
+tacacs-server host 10.5.1.18 single-connection
+tacacs-server host 10.5.2.110 key 7 "$4g5C10%" single-connection
+tacacs-server host 10.5.4.110 key 7 "$4g5C10%" single-connection
+aaa group server tacacs+ ACS_V5
+    server 10.5.2.18
+    server 10.5.1.18
+    use-vrf management
+    source-interface mgmt0
+aaa group server tacacs+ ISE
+    server 10.5.2.110
+    server 10.5.4.110
+    use-vrf management
+    source-interface mgmt0
+crypto key param rsa label QRK-KIO-SWAG01.kionetworks.com modulus 1024
+ip access-list 1
+  20 permit ip 10.5.4.0/24 any
+  30 permit ip 10.5.1.27/32 any
+  40 permit ip 10.5.1.17/32 any
+  50 permit ip 10.5.2.17/32 any
+  60 permit ip 10.5.1.18/32 any
+  70 permit ip 10.5.2.18/32 any
+  80 permit ip 10.5.1.253/32 any
+  90 permit ip 10.5.1.252/32 any
+  100 permit ip 10.5.2.252/32 any
+  110 permit ip 10.5.2.253/32 any
+  120 permit ip 10.5.3.253/32 any
+  130 permit ip 10.5.3.252/32 any
+  140 permit ip 10.60.29.4/32 any
+  150 permit ip 10.60.29.8/32 any
+  160 permit ip 10.60.24.132/32 any
+  170 permit ip 10.60.24.133/32 any
+  180 permit ip 10.51.48.5/32 any
+  190 permit ip 10.57.35.30/32 any
+  200 permit ip 10.60.29.7/32 any
+  470 permit ip 10.51.33.30/32 any
+  480 permit ip 10.5.2.27/32 any
+ip access-list 6
+  10 remark ACL para SNMP Cisco Prime Infrastructure
+  20 permit ip 10.5.2.17/32 10.5.2.141/32
+  30 permit ip 10.5.1.17/32 10.5.2.141/32
+  40 permit ip 10.51.33.27/32 10.5.2.141/32
+  50 permit ip 10.51.33.30/32 10.5.2.141/32
+  60 permit ip 10.5.1.27/32 10.5.2.141/32
+  70 permit ip 10.5.4.0/25 any
+  80 permit ip 10.60.29.4/32 any
+  90 permit ip 10.60.29.5/32 any
+QRK-KIO-SWAG01#

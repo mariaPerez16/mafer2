@@ -1,0 +1,54 @@
++++PARSEO+++:
+
+Modelo: N5K-C5010P-BFS 
+Numero de serie: SSI15230H81
+Numero de parte: N5K-C5010P-BFS
+Version: 5.2(1)N1(9)
+Hostname: 565-KIO-SWKL02
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: Power supply 1
+Descripcion: AC power supply
+PID: N5K-PAC-550W
+Numero de serie: DTM151300U9
+
+Informacion power supply 2
+ID: Power supply 2
+Descripcion: AC power supply
+PID: N5K-PAC-550W
+Numero de serie: DTM151300U8
+
+
+Cantidad de ventiladores es 2 en el equipo N5K-C5010P-BFS 
+
+Informacion ventilador 1
+ID: Fan 1
+Modelo: N5K-C5010-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 2
+ID: Fan 2
+Modelo: N5K-C5010-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+
+Cantidad de modulos es 2 en el equipo N5K-C5010P-BFS 
+
+Informacion modulo 1
+ID: Module 1
+Modelo: N5K-C5010P-BFS 
+Numero de serie: FOC15270BA5
+Descripcion: 20x10GE/Supervisor
+
+Informacion modulo 2
+ID: Module 2
+Modelo: N5K-M1060 
+Numero de serie: FOC15240DPX
+Descripcion: 6x1/2/4/8G FC Module
+
+
+

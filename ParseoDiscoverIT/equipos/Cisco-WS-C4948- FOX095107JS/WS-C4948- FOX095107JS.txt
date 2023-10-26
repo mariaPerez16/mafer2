@@ -1,0 +1,24 @@
++++PARSEO+++:
+
+Modelo: WS-C4948
+Numero de serie: FOX095107JS
+Numero de parte: WS-C4948
+Version: 12.2(50)SG1
+Hostname: Switch
+
+Cantidad de power supply: 1
+
+Informacion power supply 1
+Modulo: Power Supply 1
+Descripcion: Power Supply ( AC 300W )
+PID: PWR-C49-300AC
+Numero de serie: QCS1523B1FP
+
+
+Cantidad de ventiladores es 0 en el equipo WS-C4948
+
+
+Cantidad de modulos es 0 en el equipo WS-C4948
+
+
+

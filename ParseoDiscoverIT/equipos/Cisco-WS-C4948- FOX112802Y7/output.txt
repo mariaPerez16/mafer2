@@ -1,0 +1,397 @@
+
+root@back-discoverit:~# ssh careit@10.5.2.252
+(careit@10.5.2.252) password:
+
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+"Esta accediendo a un sistema propiedad de KIO Networks.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta
+prohibido y es contrario a las Politicas de KIO Networks. Los usuarios,
+al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de para aplicar
+medidas disciplinarias pertinentes".
+
+QRK-KIO-SWMN01#show version
+Cisco IOS Software, Catalyst 4500 L3 Switch Software (cat4500-IPBASEK9-M), Version 15.0(2)SG10, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Tue 07-Apr-15 09:19 by prod_rel_team
+Image text-base: 0x10000000, data-base: 0x12097724
+
+ROM: 12.2(20r)EW1
+Dagobah Revision 226, Swamp Revision 5
+
+QRK-KIO-SWMN01 uptime is 35 weeks, 3 days, 10 hours, 21 minutes
+System returned to ROM by abort at PC 0x0
+System restarted at 02:34:33 MEX Sun Aug 7 2022
+System image file is "bootflash:cat4500-ipbasek9-mz.150-2.SG10.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C4948 (MPC8245) processor (revision 0) with 262144K bytes of memory.
+Processor board ID FOX112802Y7
+MPC8245 CPU at 266Mhz, Fixed Module
+Last reset from Abort
+15 Virtual Ethernet interfaces
+48 Gigabit Ethernet interfaces
+511K bytes of non-volatile configuration memory.
+
+Configuration register is 0x2102
+
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#show inve
+QRK-KIO-SWMN01#show inventory r
+QRK-KIO-SWMN01#show inventory raw
+NAME: "Switch System", DESCR: "Cisco Systems, Inc. WS-C4948 1 slot switch "
+PID:                   , VID:      , SN: FOX112802Y7
+
+NAME: "Slot 1", DESCR: "WS-C4948 1 slot switch chassis slot"
+PID:                   , VID:      , SN:
+
+NAME: "Linecard(slot 1)", DESCR: "10/100/1000BaseT (RJ45), 1000BaseX (SFP) Supervisor with 48 10/100/1000BASE-T ports and 4 1000BASE-"
+PID: WS-C4948          , VID: V05  , SN: FOX112802Y7
+
+NAME: "Port Container 1/45", DESCR: "Port Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/45", DESCR: ""
+PID:                   , VID:      , SN:
+
+NAME: "Port Container 1/46", DESCR: "Port Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/46", DESCR: ""
+PID:                   , VID:      , SN:
+
+NAME: "Port Container 1/47", DESCR: "Port Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/47", DESCR: ""
+PID:                   , VID:      , SN:
+
+NAME: "Port Container 1/48", DESCR: "Port Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/48", DESCR: "1000BaseSX"
+PID: Unspecified       , VID:      , SN: AGM112819GS
+
+NAME: "GigabitEthernet1/1", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/2", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/3", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/4", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/5", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/6", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/7", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/8", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/9", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/10", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/11", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/12", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/13", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/14", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/15", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/16", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/17", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/18", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/19", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/20", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/21", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/22", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/23", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/24", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/25", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/26", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/27", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/28", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/29", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/30", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/31", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/32", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/33", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/34", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/35", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/36", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/37", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/38", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/39", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/40", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/41", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/42", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/43", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet1/44", DESCR: "Gigabit Ethernet Port"
+PID:                   , VID:      , SN:
+
+NAME: "FastEthernet1", DESCR: "Management Port"
+PID:                   , VID:      , SN:
+
+NAME: "Fan Tray Bay", DESCR: "Container of Fan Tray"
+PID:                   , VID:      , SN:
+
+NAME: "Fan", DESCR: "FanTray"
+PID:                   , VID:      , SN:
+
+NAME: "Container of Power Supply Bay", DESCR: "Container of Container of Power Supply"
+PID:                   , VID:      , SN:
+
+NAME: "Power Supply Bay 1 ", DESCR: "Container of Power Supply"
+PID:                   , VID:      , SN:
+
+NAME: "Power Supply 1", DESCR: "Power Supply ( AC 300W )"
+PID: PWR-C49-300AC     , VID:      , SN: QCS1136B07H
+
+NAME: "Power Supply 1 Fan", DESCR: "Power Supply Fan Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Power Supply Bay 2 ", DESCR: "Container of Power Supply"
+PID:                   , VID:      , SN:
+
+NAME: "Power Supply 2", DESCR: "Power Supply ( AC 300W )"
+PID: PWR-C49-300AC     , VID:      , SN: PAC14320MLE
+
+NAME: "Power Supply 2 Fan", DESCR: "Power Supply Fan Sensor"
+PID:                   , VID:      , SN:
+
+NAME: "Chassis Temperature Sensor", DESCR: "Chassis Temperature Sensor"
+PID:                   , VID:      , SN:
+
+
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#show module
+QRK-KIO-SWMN01#show module
+Chassis Type : WS-C4948
+
+Power consumed by backplane : 0 Watts
+
+Mod Ports Card Type                              Model              Serial No.
+---+-----+--------------------------------------+------------------+-----------
+ 1    48  1000BaseX (SFP) Supervisor             WS-C4948           FOX112802Y7
+
+ M MAC addresses                    Hw  Fw           Sw               Status
+--+--------------------------------+---+------------+----------------+---------
+ 1 001d.a26e.52c0 to 001d.a26e.52ef 1.4 12.2(20r)EW1 15.0(2)SG10      Ok
+
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#
+QRK-KIO-SWMN01#show run
+QRK-KIO-SWMN01#show run
+Building configuration...
+
+Current configuration : 32943 bytes
+!
+! Last configuration change at 21:10:23 MEX Fri Mar 31 2023 by dblanco
+! NVRAM config last updated at 21:10:24 MEX Fri Mar 31 2023 by dblanco
+!
+version 15.0
+no service pad
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service compress-config
+!
+hostname QRK-KIO-SWMN01
+!
+boot-start-marker
+boot system flash bootflash:cat4500-ipbasek9-mz.150-2.SG10.bin
+boot-end-marker
+!
+enable secret 5 $1$HMVj$GB17kDsmIjMSKFQI2dGTe.
+!
+username bck privilege 15 secret 5 $1$/MGB$1suRUHIMG4Akq8W/YWWHh1
+username jgutierrezlocal privilege 15 secret 5 $1$uMiW$eT6Qe28uuHpyhu2v6gOkX0
+!
+!
+aaa new-model
+!
+!
+aaa group server tacacs+ ISE
+ server-private 10.5.2.110 single-connection key 7 0865184D5C32544757
+ server-private 10.5.4.110 single-connection key 7 03400F085324701C0B
+ ip tacacs source-interface Vlan85
+!
+aaa authentication login default group ISE local
+aaa authentication login CONSOLE line local
+aaa authorization exec default group ISE local
+aaa authorization commands 0 default group ISE local
+aaa authorization commands 1 default group ISE local
+aaa authorization commands 15 default group ISE local
+aaa accounting exec default start-stop group ISE
+aaa accounting commands 0 default start-stop group ISE
+aaa accounting commands 1 default start-stop group ISE
+aaa accounting commands 15 default start-stop group ISE
+!
+!
+!
+aaa session-id common
+clock timezone MEX -6
+ip subnet-zero
+no ip domain-lookup
+ip domain-name kioneworks.com
+!
+!
+ip vrf mgmtVrf
+!
+!
+!
+!
+power redundancy-mode redundant
+!
+!
+!
+archive
+ log config
+  logging enable
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+spanning-tree vlan 620 priority 61440
+spanning-tree vlan 1020-1021 priority 0
+!
+vlan internal allocation policy ascending
+!
+vlan 1020
+ name CONTACTO_ACI_FW-MON
+!
+vlan 1021
+ name BD_INT_PROXY_ACI
+!
+vlan 1096
+ name UCS_APIC_MSO_NSO
+!
+vlan 1098
+ name CONTACTO_ADMON_OLYMPUS
+!
+vlan 1099
+ name L3OUT_Monitoring_ACI
+!
+ip tftp source-interface Vlan85
+ip ssh time-out 60
+ip ssh authentication-retries 2
+ip ssh source-interface Vlan85
+ip ssh precedence 6
+ip ssh version 2
+!
+class-map match-all Limite_BW
+
+QRK-KIO-SWMN01#

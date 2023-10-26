@@ -1,0 +1,41 @@
++++PARSEO+++:
+
+Modulo: FEX 100 CHASSIS
+Hostname: 56L-KIO-SWBK02
+Modelo: N2K-C2232PP-10GE
+Numero de serie: SSI15420CSA
+Numero de parte: N2K-C2232PP-10GE
+Version del firmware: 7.0(8)N1(1)
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 100 CHASSIS
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+PID: N2K-C2232PP-10GE
+Numero de serie: SSI15420CSA
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 100 CHASSIS
+Modelo: N2K-C2232PP-10GE
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+PID: N2K-C2232PP-10GE
+Numero de serie: SSI15420CSA
+
+
+Modulos
+
+Informacion modulo 1
+ID: FEX 100 Module 1
+Modelo: Fabric Extender Module: 32x10GE, 8x10GE Supervisor
+Numero de serie: N2K-C2232PP-10GE
+Descripcion: FEX 100
+
+
+

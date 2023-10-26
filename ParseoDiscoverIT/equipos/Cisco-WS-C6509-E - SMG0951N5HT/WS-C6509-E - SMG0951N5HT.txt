@@ -1,0 +1,58 @@
++++PARSEO+++:
+
+Modelo: WS-C6509-E 
+Numero de serie: SMG0951N5HT
+Numero de parte: WS-C6509-E
+Version: 12.2(33)SXH3
+Hostname: SW15
+
+Cantidad de power supply: 1
+
+Informacion power supply 1
+ID: C3CXL Policy Feature Card 3 sub-module of 5
+Descripcion: VS-F6K-PFC3CXL Policy Feature Card 3 Rev. 1.0
+PID: VS-F6K-PFC3CXL
+Numero de serie: SAL123731U7
+
+
+Cantidad de ventiladores es 4 en el equipo WS-C6509-E 
+
+Informacion ventilador 1
+ID: FRU 1
+Modelo: WS-C6509-E 
+
+Informacion ventilador 2
+ID: FRU 2
+Modelo: WS-C6509-E 
+
+Informacion ventilador 3
+ID: FRU 3
+Modelo: WS-C6509-E 
+
+Informacion ventilador 4
+ID: FAN 1
+Modelo: WS-C6509-E 
+
+
+Cantidad de modulos es 3 en el equipo WS-C6509-E 
+
+Informacion modulo 1
+ID: WS-F6700-CFC Centralized Forwarding Card sub-module of 1
+Modelo: WS-F6700-CFC 
+Numero de serie: SAD115102FB
+Descripcion: WS-F6700-CFC Centralized Forwarding Card Rev. 4.0
+
+Informacion modulo 2
+ID: msfc sub-module of 5
+Modelo: VS-F6K-MSFC3 
+Numero de serie: SAL12373AGW
+Descripcion: VS-F6K-MSFC3 MSFC3 Daughterboard Rev. 1.0
+
+Informacion modulo 3
+ID: VS-F6K-PFC3CXL Policy Feature Card 3 sub-module of 5
+Modelo: VS-F6K-PFC3CXL 
+Numero de serie: SAL123731U7
+Descripcion: VS-F6K-PFC3CXL Policy Feature Card 3 Rev. 1.0
+
+
+

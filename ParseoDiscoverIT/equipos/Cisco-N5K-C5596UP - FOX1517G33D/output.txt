@@ -1,0 +1,229 @@
+root@back-discoverit:~# ssh careit@10.5.3.151
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+CURIOSITY ENHANCES DECISIONS
+CURIOSITY INCREASES YOUR KNOWLEDGE
+CURIOSITY CLEARS DOUBTS
+WE LOVE IT!!!
+(careit@10.5.3.151) Password:
+(careit@10.5.3.151) Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+56L-KIO-SWBK01#
+56L-KIO-SWBK01#
+56L-KIO-SWBK01#
+56L-KIO-SWBK01# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Software
+  BIOS:      version 3.6.0
+  loader:    version N/A
+  kickstart: version 7.0(8)N1(1)
+  system:    version 7.0(8)N1(1)
+  Power Sequencer Firmware:
+             Module 1: version v7.0
+             Module 2: version v1.0
+  Microcontroller Firmware:        version v1.0.0.2
+  SFP uC:    Module 1: v1.1.0.0
+  QSFP uC:   Module not detected
+  BIOS compile time:       05/09/2012
+  kickstart image file is: bootflash:///n5000-uk9-kickstart.7.0.8.N1.1.bin
+  kickstart compile time:  2/20/2016 21:00:00 [02/21/2016 00:32:37]
+  system image file is:    bootflash:///n5000-uk9.7.0.8.N1.1.bin
+  system compile time:     2/20/2016 21:00:00 [02/21/2016 03:04:42]
+
+
+Hardware
+  cisco Nexus 5596 Chassis ("O2 48X10GE/Modular Supervisor")
+  Intel(R) Xeon(R) CPU         with 8253860 kB of memory.
+  Processor Board ID JAF1523BABJ
+
+  Device name: 56L-KIO-SWBK01
+  bootflash:    2007040 kB
+
+Kernel uptime is 1701 day(s), 23 hour(s), 28 minute(s), 12 second(s)
+
+Last reset at 80208 usecs after  Mon Aug 27 17:36:10 2018
+
+  Reason: Reset Requested by CLI command reload
+  System version: 7.0(8)N1(1)
+  Service:
+
+plugin
+  Core Plugin, Ethernet Plugin
+56L-KIO-SWBK01# show module
+Mod Ports Module-Type                         Model                  Status
+--- ----- ----------------------------------- ---------------------- ------------
+1   48    O2 48X10GE/Modular Supervisor       N5K-C5596UP-SUP        active *
+2   0     O2 GEM with L3 ASIC                 N55-M160L3             ok
+
+Mod  Sw              Hw      World-Wide-Name(s) (WWN)
+---  --------------  ------  ----------------------------------------------------
+1    7.0(8)N1(1)     1.1     --
+2    7.0(8)N1(1)     1.0     --
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    0005.73e8.b488 to 0005.73e8.b4b7         JAF1523BABJ
+2    0000.0000.0000 to 0000.0000.000f         FOC15424BRT
+56L-KIO-SWBK01#
+56L-KIO-SWBK01# show inventory
+NAME: "Chassis", DESCR: "Nexus 5596 Chassis"
+PID: N5K-C5596UP       , VID: V02 , SN: FOX1517G33D
+
+NAME: "Module 1", DESCR: "O2 48X10GE/Modular Supervisor"
+PID: N5K-C5596UP       , VID: V02 , SN: JAF1523BABJ
+
+NAME: "Module 2", DESCR: "O2 GEM with L3 ASIC"
+PID: N55-M160L3        , VID: V01 , SN: FOC15424BRT
+
+NAME: "Fan 4", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 3", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 2", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 1", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Power supply 1", DESCR: "AC power supply"
+PID: N55-PAC-1100W     , VID: V03 , SN: POG2018505A
+
+NAME: "Power supply 2", DESCR: "AC power supply"
+PID: N55-PAC-1100W     , VID: V03 , SN: POG2018505T
+
+NAME: "FEX 100 CHASSIS", DESCR: "N2K-C2232PP-10GE  CHASSIS"
+PID: N2K-C2232PP-10GE  , VID: V03 , SN: SSI1542094P
+
+NAME: "FEX 100 Module 1", DESCR: "Fabric Extender Module: 32x10GE, 8x10GE Supervisor"
+PID: N2K-C2232PP-10GE  , VID: V03 , SN: FOC154725AX
+
+NAME: "FEX 100 Fan 1", DESCR: "Fabric Extender Fan module"
+PID: N2K-C2232-FAN     , VID: N/A , SN: N/A
+
+NAME: "FEX 100 Power Supply 1", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: LIT154500E3
+
+NAME: "FEX 100 Power Supply 2", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: LIT154500E6
+
+NAME: "FEX 180 CHASSIS", DESCR: "N2K-C2248TP-1GE  CHASSIS"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: SSI15420M37
+
+NAME: "FEX 180 Module 1", DESCR: "Fabric Extender Module: 48x1GE, 4x10GE Supervisor"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: FOC15470129
+
+NAME: "FEX 180 Fan 1", DESCR: "Fabric Extender Fan module"
+PID: N2K-C2248-FAN     , VID: N/A , SN: N/A
+
+NAME: "FEX 180 Power Supply 1", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: DTN1542P0A1
+
+NAME: "FEX 180 Power Supply 2", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: DTN1542P09Z
+
+NAME: "FEX 190 CHASSIS", DESCR: "N2K-C2248TP-1GE  CHASSIS"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: SSI154307YM
+
+NAME: "FEX 190 Module 1", DESCR: "Fabric Extender Module: 48x1GE, 4x10GE Supervisor"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: FOC154647QA
+
+NAME: "FEX 190 Fan 1", DESCR: "Fabric Extender Fan module"
+PID: N2K-C2248-FAN     , VID: N/A , SN: N/A
+
+NAME: "FEX 190 Power Supply 1", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: DTN1542P0D7
+
+NAME: "FEX 190 Power Supply 2", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: DTN1542P0CQ
+
+56L-KIO-SWBK01# exit
+Connection to 10.5.3.151 closed.
+root@back-discoverit:~# ssh careit@10.5.3.151
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+CURIOSITY ENHANCES DECISIONS
+CURIOSITY INCREASES YOUR KNOWLEDGE
+CURIOSITY CLEARS DOUBTS
+WE LOVE IT!!!
+(careit@10.5.3.151) Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2016, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+56L-KIO-SWBK01# show Fex
+  FEX         FEX           FEX              FEX              Fex
+Number    Description      State            Model            Serial
+------------------------------------------------------------------------
+100        FEX0100                Online    N2K-C2232PP-10GE   SSI1542094P
+180        FEX0180                Online     N2K-C2248TP-1GE   SSI15420M37
+190        FEX0190                Online     N2K-C2248TP-1GE   SSI154307YM

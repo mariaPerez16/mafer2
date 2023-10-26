@@ -1,0 +1,41 @@
++++PARSEO+++:
+
+Modulo: FEX 199 CHASSIS
+Hostname: CHP-BA-SFS-4
+Modelo: N2K-C2248TP-1GE
+Numero de serie: SSI1515062G
+Numero de parte: N2K-C2248TP-1GE
+Version del firmware: 7.0(6)N1(1)
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 199 CHASSIS
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI1515062G
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 199 CHASSIS
+Modelo: N2K-C2248TP-1GE
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI1515062G
+
+
+Modulos
+
+Informacion modulo 1
+ID: FEX 199 Module 1
+Modelo: Fabric Extender Module: 48x1GE, 4x10GE Supervisor
+Numero de serie: N2K-C2248TP-1GE
+Descripcion: FEX 199
+
+
+

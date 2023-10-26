@@ -1,0 +1,30 @@
++++PARSEO+++:
+
+Modelo: WS-C4948-10GE
+Numero de serie: FOX1447GSTM
+Numero de parte: 73-9344-13
+Version: 15.0(2)SG11
+Hostname: 56A-KIO-SWMN01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: Power Supply 1
+Modelo: PWR-C49-300AC
+PID: 341-0103-04
+Numero de serie: QCS1505B1UM
+
+Informacion power supply 2
+ID: Power Supply 2
+Modelo: PWR-C49-300AC
+PID: 341-0103-04
+Numero de serie: QCS1505B1T8
+
+
+Cantidad de ventiladores es 0 en el equipo WS-C4948-10GE
+
+
+Cantidad de modulos es 0 en el equipo WS-C4948-10GE
+
+
+

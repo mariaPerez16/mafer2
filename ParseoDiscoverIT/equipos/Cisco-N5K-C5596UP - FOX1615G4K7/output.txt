@@ -1,0 +1,181 @@
+Command: version
+Result:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Software
+  BIOS:      version 3.6.0
+  loader:    version N/A
+  kickstart: version 7.0(6)N1(1)
+  system:    version 7.0(6)N1(1)
+  Power Sequencer Firmware: 
+             Module 1: version v7.0
+             Module 2: version v1.0
+             Module 3: version v1.0
+             Module 4: version v1.0
+  Microcontroller Firmware:        version v1.0.0.2
+  SFP uC:    Module 1: v1.1.0.0
+  QSFP uC:   Module not detected
+  BIOS compile time:       05/09/2012
+  kickstart image file is: bootflash:///n5000-uk9-kickstart.7.0.6.N1.1.bin
+  kickstart compile time:  4/7/2015 4:00:00 [04/07/2015 08:05:58]
+  system image file is:    bootflash:///n5000-uk9.7.0.6.N1.1.bin
+  system compile time:     4/7/2015 4:00:00 [04/07/2015 13:04:26]
+
+
+Hardware
+  cisco Nexus 5596 Chassis ("O2 48X10GE/Modular Supervisor")
+  Intel(R) Xeon(R) CPU         with 8253868 kB of memory.
+  Processor Board ID FOC161772ST
+
+  Device name: CHP-BA-SFS-4
+  bootflash:    2007040 kB
+
+Kernel uptime is 0 day(s), 1 hour(s), 17 minute(s), 10 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 7.0(6)N1(1)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Command: module
+Result:
+Mod Ports Module-Type                         Model                  Status
+--- ----- ----------------------------------- ---------------------- ------------
+1   48    O2 48X10GE/Modular Supervisor       N5K-C5596UP-SUP        active *
+2   16    O2 16 port flexible GEM             N55-M16UP              ok
+3   16    O2 16 port flexible GEM             N55-M16UP              ok
+4   16    O2 16 port flexible GEM             N55-M16UP              ok
+
+Mod  Sw              Hw      World-Wide-Name(s) (WWN)
+---  --------------  ------  ----------------------------------------------------
+1    7.0(6)N1(1)     1.1     --
+2    7.0(6)N1(1)     1.0     --
+3    7.0(6)N1(1)     1.0     --
+4    7.0(6)N1(1)     1.0     --
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    547f.ee9d.fe08 to 547f.ee9d.fe37         FOC161772ST
+2    547f.eef7.2140 to 547f.eef7.214f         FOC17012J7J
+3    547f.eef7.20e0 to 547f.eef7.20ef         FOC17012HXK
+4    547f.eef7.1240 to 547f.eef7.124f         FOC16515USD
+
+Command: fan
+Result:
+Fan:
+------------------------------------------------------
+Fan             Model                Hw         Status
+------------------------------------------------------
+Chassis-1       N5596UP-FAN          --         ok
+Chassis-2       N5596UP-FAN          --         ok
+Chassis-3       N5596UP-FAN          --         ok
+Chassis-4       N5596UP-FAN          --         ok
+PS-1            N55-PAC-1100W        --         failure
+PS-2            N55-PAC-1100W        --         ok
+
+Command: inventory
+Result:
+NAME: "Chassis", DESCR: "Nexus 5596 Chassis"
+PID: N5K-C5596UP       , VID: V02 , SN: FOX1615G4K7
+
+NAME: "Module 1", DESCR: "O2 48X10GE/Modular Supervisor"
+PID: N5K-C5596UP       , VID: V02 , SN: FOC161772ST
+
+NAME: "Module 2", DESCR: "O2 16 port flexible GEM"
+PID: N55-M16UP         , VID: V01 , SN: FOC17012J7J
+
+NAME: "Module 3", DESCR: "O2 16 port flexible GEM"
+PID: N55-M16UP         , VID: V01 , SN: FOC17012HXK
+
+NAME: "Module 4", DESCR: "O2 16 port flexible GEM"
+PID: N55-M16UP         , VID: V01 , SN: FOC16515USD
+
+NAME: "Fan 4", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 3", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 2", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Fan 1", DESCR: "Chassis fan module"
+PID: N5596UP-FAN       , VID: N/A , SN: N/A
+
+NAME: "Power supply 1", DESCR: "AC power supply"
+PID: N55-PAC-1100W     , VID: V03 , SN: POG17475004
+
+NAME: "Power supply 2", DESCR: "AC power supply"
+PID: N55-PAC-1100W     , VID: V03 , SN: POG174750BC
+
+NAME: "FEX 199 CHASSIS", DESCR: "N2K-C2248TP-1GE  CHASSIS"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: SSI1515062G
+
+NAME: "FEX 199 Module 1", DESCR: "Fabric Extender Module: 48x1GE, 4x10GE Supervisor"
+PID: N2K-C2248TP-1GE   , VID: V03 , SN: JAF1518CSMG
+
+NAME: "FEX 199 Fan 1", DESCR: "Fabric Extender Fan module"
+PID: N2K-C2248-FAN     , VID: N/A , SN: N/A
+
+NAME: "FEX 199 Power Supply 1", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V03 , SN: LIT16281M4C
+
+NAME: "FEX 199 Power Supply 2", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W-B  , VID: V01 , SN: LIT15300XH9
+
+Command: power
+Result:
+Power Supply:
+Voltage: 12 Volts
+-----------------------------------------------------------
+PS  Model                Input Power       Current   Status
+                         Type  (Watts)     (Amps)          
+-----------------------------------------------------------
+1   --                   --         --        --     fail/shutdown       
+2   N55-PAC-1100W        AC    1050.00     87.50     ok                  
+
+
+Mod Model                   Power     Current     Power     Current     Status
+                            Requested Requested   Allocated Allocated         
+                            (Watts)   (Amps)      (Watts)   (Amps)              
+--- ----------------------  -------   ----------  --------- ----------  ----------
+1    N5K-C5596UP-SUP        648.00    54.00       648.00    54.00       powered-up
+2    N55-M16UP              90.00     7.50        90.00     7.50        powered-up
+3    N55-M16UP              90.00     7.50        90.00     7.50        powered-up
+4    N55-M16UP              90.00     7.50        90.00     7.50        powered-up
+
+
+Power Usage Summary:
+--------------------
+Power Supply redundancy mode:                 Redundant
+Power Supply redundancy operational mode:     Non-redundant
+
+Total Power Capacity                             1050.00 W
+
+Power reserved for Supervisor(s)                  648.00 W
+Power currently used by Modules                   270.00 W
+
+                                                -------------
+Total Power Available                             132.00 W
+                                                -------------
+
+Command: host
+Result:
+hostname CHP-BA-SFS-4
+
+Command: env
+Result:
+^
+% Invalid command at '^' marker.
+

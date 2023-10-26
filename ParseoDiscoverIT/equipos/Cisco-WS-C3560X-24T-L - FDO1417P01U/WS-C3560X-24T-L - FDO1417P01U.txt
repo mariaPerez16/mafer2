@@ -1,0 +1,44 @@
++++PARSEO+++:
+
+Modelo: WS-C3560X-24T-L 
+Numero de serie: FDO1417P01U
+Numero de parte: WS-C3560X-24T-L
+Version: 15.0(2)SE10
+Hostname: MX1-KIO-SWMN01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+Modulo: Power Supply 0
+Descripcion: FRU Power Supply
+PID: C3KX-PWR-350WAC
+Numero de serie: LIT18200DMZ
+
+Informacion power supply 2
+Modulo: Power Supply 1
+Descripcion: FRU Power Supply
+PID: C3KX-PWR-350WAC
+Numero de serie: LIT142602ZT
+
+
+Cantidad de ventiladores es 2 en el equipo WS-C3560X-24T-L 
+
+Informacion ventilador 1
+Modulo: Fan 0
+Modelo: WS-C3560X-24T-L 
+
+Informacion ventilador 2
+Modulo: Fan 1
+Modelo: WS-C3560X-24T-L 
+
+
+Cantidad de modulos es 1 en el equipo WS-C3560X-24T-L 
+
+Informacion modulo 1
+Modulo: FRULink Slot 1 - FRULink Module
+Modelo: C3KX-NM-1G 
+Numero de serie: FDO142511WF
+Descripcion: FRULink 1G Module
+
+
+

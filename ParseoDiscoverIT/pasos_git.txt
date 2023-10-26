@@ -1,0 +1,8 @@
+Abre una terminal y navega hasta el directorio donde se encuentra tu proyecto local.
+Inicializa el repositorio local con git init.
+Agrega los archivos al área de preparación con git add .
+Confirma los cambios con git commit -m "mensaje de confirmación".
+Agrega el repositorio remoto con git remote add origin https://github.com/victormanuelalpha/ParseoDiscoverIT.git.
+Sube los cambios al repositorio remoto con git push -u origin master.
+git checkout
+prueba de push

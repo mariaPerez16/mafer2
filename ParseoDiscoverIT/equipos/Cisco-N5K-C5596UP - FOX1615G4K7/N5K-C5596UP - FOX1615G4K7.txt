@@ -1,0 +1,78 @@
++++PARSEO+++:
+
+Modelo: N5K-C5596UP 
+Numero de serie: FOX1615G4K7
+Numero de parte: N5K-C5596UP
+Version: 7.0(6)N1(1)
+Hostname: CHP-BA-SFS-4
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: Power supply 1
+Descripcion: AC power supply
+PID: N55-PAC-1100W
+Numero de serie: POG17475004
+
+Informacion power supply 2
+ID: Power supply 2
+Descripcion: AC power supply
+PID: N55-PAC-1100W
+Numero de serie: POG174750BC
+
+
+Cantidad de ventiladores es 4 en el equipo N5K-C5596UP 
+
+Informacion ventilador 1
+ID: Fan 4
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 2
+ID: Fan 3
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 3
+ID: Fan 2
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 4
+ID: Fan 1
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+
+Cantidad de modulos es 4 en el equipo N5K-C5596UP 
+
+Informacion modulo 1
+ID: Module 2
+Modelo: N55-M16UP 
+Numero de serie: FOC17012J7J
+Descripcion: O2 16 port flexible GEM
+
+Informacion modulo 2
+ID: Module 3
+Modelo: N55-M16UP 
+Numero de serie: FOC17012HXK
+Descripcion: O2 16 port flexible GEM
+
+Informacion modulo 3
+ID: Module 4
+Modelo: N55-M16UP 
+Numero de serie: FOC16515USD
+Descripcion: O2 16 port flexible GEM
+
+Informacion modulo 4
+ID: Module 1
+Modelo: N5K-C5596UP 
+Numero de serie: FOC161772ST
+Descripcion: O2 48X10GE/Modular Supervisor
+
+
+

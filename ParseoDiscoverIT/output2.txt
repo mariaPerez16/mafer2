@@ -1,0 +1,214 @@
+root@back-discoverit:~# ssh careit@192.168.32.6
+
+
+ ___   _  ___   _______
+|   | | ||   | |       |
+|   |_| ||   | |   _   |
+|      _||   | |  | |  |
+|     |_ |   | |  |_|  |
+|    _  ||   | |       |
+|___| |_||___| |_______|
+ __    _  _______  _______  _     _  _______  ______    ___   _  _______
+|  |  | ||       ||       || | _ | ||       ||    _ |  |   | | ||       |
+|   |_| ||    ___||_     _|| || || ||   _   ||   | ||  |   |_| ||  _____|
+|       ||   |___   |   |  |       ||  | |  ||   |_||_ |      _|| |_____
+|  _    ||    ___|  |   |  |       ||  |_|  ||    __  ||     |_ |_____  |
+| | |   ||   |___   |   |  |   _   ||       ||   |  | ||    _  | _____| |
+|_|  |__||_______|  |___|  |__| |__||_______||___|  |_||___| |_||_______|
+
+############################################################################################################
+"Esta accediendo a un sistema privado. El usuario autorizado es responsable de proteger la informacion,
+mantener el secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica, el personal de seguridad
+puede proporcionar la evidencia de, para aplicar medidas disciplinarias pertinentes."
+
+SERVICIOS DE TECNOLOGIAS DE INFORMACION DE MISION CRITICA
+TAKE IT EASY!!!
+##########################################################################################################
+careit@192.168.32.6's password:
+Welcome to the Brocade Network Operating System Software
+careit connected from 10.5.4.6 using ssh on RI1-KIO-SWAG01
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01# show version
+
+Network Operating System Software
+Network Operating System Version: 5.0.1
+Copyright (c) 1995-2014 Brocade Communications Systems, Inc.
+Firmware name:      5.0.1d
+Build Time:         17:53:30 Jun 12, 2015
+Install Time:       20:46:06 Aug 22, 2016
+Kernel:             2.6.34.6
+
+BootProm:           1.0.1
+Control Processor:  e500mc with 4096 MB of memory
+
+Slot    Name    Primary/Secondary Versions                         Status
+---------------------------------------------------------------------------
+SW/0    NOS     5.0.1d                                             ACTIVE*
+                5.0.1d
+SW/1    NOS     5.0.1d                                             STANDBY
+                5.0.1d
+
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01# show inventory
+Rbridge-id: 1
+
+
+NAME:FAN 1              DESCR:Chassis Fan module
+PN:N/A                  SN:N/A
+
+NAME:FAN 2              DESCR:Chassis Fan module
+PN:N/A                  SN:N/A
+
+NAME:POWER SUPPLY 1     DESCR:Chassis PS module
+PN:23-1000043-01        SN:N/A
+
+NAME:POWER SUPPLY 2     DESCR:Chassis PS module
+PN:23-1000043-01        SN:N/A
+
+NAME: Chassis           DESCR:System Chassis
+SID:BR-VDX6740          SwitchType:131
+PN:40-1000927-06        SN:CPL3847K30D
+
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01# show chassis
+Rbridge-id: 1
+
+Chassis Name:   BR-VDX6740
+switchType: 131
+
+FAN  Unit: 1
+Time Awake:             96 days
+
+FAN  Unit: 2
+Time Awake:             96 days
+
+POWER SUPPLY  Unit: 1
+Factory Part Num:       23-1000043-01
+Factory Serial Num:
+Time Awake:             96 days
+
+POWER SUPPLY  Unit: 2
+Factory Part Num:       23-1000043-01
+Factory Serial Num:
+Time Awake:             96 days
+
+CHASSIS/WWN  Unit: 1
+Power Consume Factor:   0
+Factory Part Num:       40-1000927-06
+Factory Serial Num:     CPL3847K30D
+Manufacture:            Day: 19  Month:  8  Year: 16
+Update:                 Day: 17  Month:  4  Year: 2023
+Time Alive:             1848 days
+Time Awake:             96 days
+
+Airflow direction : Port side INTAKE
+
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01#
+RI1-KIO-SWAG01# show run
+diag post rbridge-id 1
+ enable
+!
+diag post rbridge-id 2
+ enable
+!
+no fsb enable
+hardware
+ connector-group 1/0/1
+  speed LowMixed
+ !
+ connector-group 1/0/3
+  speed LowMixed
+ !
+ connector-group 1/0/5
+  speed LowMixed
+ !
+ connector-group 1/0/6
+  speed LowMixed
+ !
+ connector-group 2/0/1
+  speed LowMixed
+ !
+ connector-group 2/0/3
+  speed LowMixed
+ !
+ connector-group 2/0/5
+  speed LowMixed
+ !
+ connector-group 2/0/6
+  speed LowMixed
+ !
+!
+dpod 1/0/1
+ reserve
+!
+dpod 1/0/2
+ reserve
+!
+dpod 1/0/3
+ reserve
+!
+dpod 1/0/4
+ reserve
+!
+dpod 1/0/5
+ reserve
+!
+dpod 1/0/6
+ reserve
+!
+dpod 1/0/7
+ reserve
+!
+dpod 1/0/8
+ reserve
+!
+dpod 1/0/9
+ reserve
+!
+dpod 1/0/10
+ reserve
+!
+dpod 1/0/11
+ reserve
+!
+dpod 1/0/12
+ reserve
+!
+dpod 1/0/13
+ reserve
+!
+dpod 1/0/14
+ reserve
+!
+dpod 1/0/15
+ reserve
+!
+dpod 1/0/16
+ reserve
+!
+dpod 1/0/17
+ reserve
+!
+dpod 1/0/18
+ reserve
+!
+dpod 1/0/19
+ reserve
+!
+dpod 1/0/20
+ reserve
+!
+dpod 1/0/21
+ reserve
+!
+dpod 1/0/22
+ reserve
+Aborted: by user
+RI1-KIO-SWAG01#

@@ -1,0 +1,6 @@
+Parseando cisco ....
+['WS-C3750X-48T-S']
+Modelo: ['WS-C3750X-48T-S']
+ Numero de serie: ['FDO1614R2LD']
+ Numero de parte: ['800-31326-02']
+ version: ['15.0(1)SE3', '12.2(53r)SE2', 'ID']

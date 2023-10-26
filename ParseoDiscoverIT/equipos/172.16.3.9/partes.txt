@@ -1,0 +1,6 @@
+Parseando cisco ....
+['WS-C3560X-24T-L']
+Modelo: ['WS-C3560X-24T-L']
+ Numero de serie: ['FDO1608V1QL']
+ Numero de parte: ['800-31331-02']
+ version: ['12.2(55)SE3', '12.2(53r)SE2', 'ID']

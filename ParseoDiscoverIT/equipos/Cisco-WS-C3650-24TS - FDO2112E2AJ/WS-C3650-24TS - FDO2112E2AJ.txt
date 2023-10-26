@@ -1,0 +1,36 @@
++++PARSEO+++:
+
+Modelo: WS-C3650-24TS 
+Numero de serie: FDO2112E2AJ
+Numero de parte: WS-C3650-24TS
+Version: 03.06.06E
+Hostname: SW1
+
+Cantidad de power supply: 1
+
+Informacion power supply 1
+ID: Power Supply A
+Descripcion: Switch 1 - Power Supply A
+PID: PWR-C2-250WAC
+Numero de serie: DCB2108D2ZZ
+
+
+Cantidad de ventiladores es 3 en el equipo WS-C3650-24TS 
+
+Informacion ventilador 1
+ID: FAN 1
+Modelo: WS-C3650-24TS 
+
+Informacion ventilador 2
+ID: FAN 2
+Modelo: WS-C3650-24TS 
+
+Informacion ventilador 3
+ID: FAN 3
+Modelo: WS-C3650-24TS 
+
+
+Cantidad de modulos es 0 en el equipo WS-C3650-24TS 
+
+
+

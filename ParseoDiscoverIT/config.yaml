@@ -1,0 +1,39 @@
+device:
+  hostname: 172.16.3.15
+  username: alpha
+  password: alpha123
+  optional_args:
+    global_delay_factor: 1
+    secret: alpha123
+
+commands:
+  version: show version
+  cisco:
+    version: show version
+    module: show module
+    fan: show environment fan
+    inventory: show inventory
+    power: show environment power
+    host: show runn | inc hostname
+    env: show env all
+
+  cisco mod:
+    version: show version
+    module: show module
+    inventory: show inventory
+    power: show environment power
+    host: show runn | inc hostname
+
+  brocade:
+    version: show version
+    chassis: show chassis
+    run: show run
+    host: show runn | inc hostname
+
+  brocade mod:
+    version: show version
+    chassis: show chassis
+    module: show module
+    run: show run
+    host: show runn | inc hostname
+

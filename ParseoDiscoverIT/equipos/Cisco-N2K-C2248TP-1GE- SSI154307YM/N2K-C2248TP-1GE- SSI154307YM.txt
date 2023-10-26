@@ -1,0 +1,67 @@
++++PARSEO+++:
+
+Modulo: FEX 190 CHASSIS
+Hostname: 56L-KIO-SWBK02
+Modelo: N2K-C2248TP-1GE
+Numero de serie: SSI154307YM
+Numero de parte: N2K-C2248TP-1GE
+Version del firmware: 7.0(8)N1(1)
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 100 CHASSIS
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+PID: N2K-C2232PP-10GE
+Numero de serie: SSI15420CSA
+
+Informacion power supply 2
+Modulo: FEX 180 CHASSIS
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI15420M37
+
+Informacion power supply 3
+Modulo: FEX 190 CHASSIS
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI154307YM
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 100 CHASSIS
+Modelo: N2K-C2232PP-10GE
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+PID: N2K-C2232PP-10GE
+Numero de serie: SSI15420CSA
+
+Informacion fan 2
+Modulo: FEX 180 CHASSIS
+Modelo: N2K-C2248TP-1GE
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI15420M37
+
+Informacion fan 3
+Modulo: FEX 190 CHASSIS
+Modelo: N2K-C2248TP-1GE
+Descripcion: N2K-C2248TP-1GE  CHASSIS
+PID: N2K-C2248TP-1GE
+Numero de serie: SSI154307YM
+
+
+Modulos
+
+Informacion modulo 1
+ID: FEX 190 Module 1
+Modelo: Fabric Extender Module: 48x1GE, 4x10GE Supervisor
+Numero de serie: N2K-C2248TP-1GE
+Descripcion: FEX 190
+
+
+

@@ -1,0 +1,15 @@
++++PARSEO+++:
+Marca: brocade mod 
+Modelo: FastIron SX 800 
+Numero de Serie: SA31075059 
+Version: 05.0.00bT3e1 
+Hostname: FASTIRONSX800 
+Power supply modular brocade: [('3', '32005000', 'AC - Regular'), ('4', '32005000', 'AC - Regular')] 
+	Informacion tarjetas modular brocade:
+	3:
+Modelo: SX-FI424C 24-port Gig Copper 
+Numero de serie: CY19077870 
+	10:
+Modelo: SX-FI2XGMR4 2-port Management 
+Numero de serie: CH10080338 
+

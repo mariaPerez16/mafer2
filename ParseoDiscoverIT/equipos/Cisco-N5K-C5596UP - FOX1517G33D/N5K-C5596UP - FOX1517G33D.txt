@@ -1,0 +1,66 @@
++++PARSEO+++:
+
+Modelo: N5K-C5596UP 
+Numero de serie: FOX1517G33D
+Numero de parte: N5K-C5596UP
+Version: 7.0(8)N1(1)
+Hostname: 56L-KIO-SWBK01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: Power supply 1
+Descripcion: AC power supply
+PID: N55-PAC-1100W
+Numero de serie: POG2018505A
+
+Informacion power supply 2
+ID: Power supply 2
+Descripcion: AC power supply
+PID: N55-PAC-1100W
+Numero de serie: POG2018505T
+
+
+Cantidad de ventiladores es 4 en el equipo N5K-C5596UP 
+
+Informacion ventilador 1
+ID: Fan 4
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 2
+ID: Fan 3
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 3
+ID: Fan 2
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+Informacion ventilador 4
+ID: Fan 1
+Modelo: N5596UP-FAN 
+Numero de serie: N/A
+Descripcion: Chassis fan module
+
+
+Cantidad de modulos es 2 en el equipo N5K-C5596UP 
+
+Informacion modulo 1
+ID: Module 2
+Modelo: N55-M160L3 
+Numero de serie: FOC15424BRT
+Descripcion: O2 GEM with L3 ASIC
+
+Informacion modulo 2
+ID: Module 1
+Modelo: N5K-C5596UP 
+Numero de serie: JAF1523BABJ
+Descripcion: O2 48X10GE/Modular Supervisor
+
+
+

@@ -1,0 +1,243 @@
+root@back-discoverit:~# ssh careit@10.5.2.133
+
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+
+(careit@10.5.2.133) password:
+
+
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+CURIOSITY ENHANCES DECISIONS
+CURIOSITY INCREASES YOUR KNOWLEDGE
+CURIOSITY CLEARS DOUBTS
+WE LOVE IT!!!
+QRA-KIO-SWCO01#show module
+Mod Ports Card Type                              Model              Serial No.
+--- ----- -------------------------------------- ------------------ -----------
+  1    8  CEF720 8 port 10GE with DFC            WS-X6708-10GE      SAL1530L0F9
+  2    8  CEF720 8 port 10GE with DFC            WS-X6708-10GE      SAL12426L0J
+  3   24  CEF720 24 port 1000mb SFP              WS-X6724-SFP       SAL1117MT3N
+  5    2  Supervisor Engine 720 (Active)         WS-SUP720-3BXL     SAL1219PX62
+  6    2  Supervisor Engine 720 (Hot)            WS-SUP720-3BXL     SAD110505S7
+
+Mod MAC addresses                       Hw    Fw           Sw           Status
+--- ---------------------------------- ------ ------------ ------------ -------
+  1  30e4.dbf0.47f0 to 30e4.dbf0.47f7   2.3   12.2(18r)S1  15.1(2)SY6   Ok
+  2  0023.5e7f.33e0 to 0023.5e7f.33e7   1.9   12.2(18r)S1  15.1(2)SY6   Ok
+  3  001b.54b4.7958 to 001b.54b4.796f   2.5   12.2(14r)S5  15.1(2)SY6   Ok
+  5  0016.9de6.91dc to 0016.9de6.91df   5.14  8.5(4)       15.1(2)SY6   Ok
+  6  0017.944a.79d8 to 0017.944a.79db   5.3   8.4(2)       15.1(2)SY6   Ok
+
+Mod  Sub-Module                  Model              Serial       Hw     Status
+---- --------------------------- ------------------ ----------- ------- -------
+  1  Distributed Forwarding Card WS-F6700-DFC3CXL   SAD114201LW  1.6    Ok
+  2  Distributed Forwarding Card WS-F6700-DFC3CXL   SAL12437EPY  1.8    Ok
+  3  Distributed Forwarding Card WS-F6700-DFC3BXL   SAL1114KQC1  5.3    Ok
+  5  Policy Feature Card 3       WS-F6K-PFC3BXL     SAL1410CKNT  1.12   Ok
+  5  MSFC3 Daughterboard         WS-SUP720          SAL1219Q04L  3.5    Ok
+  6  Policy Feature Card 3       WS-F6K-PFC3BXL     SAD110503ZM  1.8    Ok
+  6  MSFC3 Daughterboard         WS-SUP720          SAD10490660  2.6    Ok
+
+Mod  Online Diag Status
+---- -------------------
+  1  Pass
+  2  Pass
+  3  Pass
+  5  Pass
+  6  Pass
+QRA-KIO-SWCO01#
+QRA-KIO-SWCO01#show idprom all
+IDPROM for backplane #0
+  (FRU is 'Catalyst 6500 9-slot backplane')
+  OEM String = 'Cisco Systems'
+  Product Number = 'WS-C6509-E'
+  Serial Number = 'SMC11200063'
+  Manufacturing Assembly Number = '73-9221-05'
+  Manufacturing Assembly Revision = 'A0'
+  Hardware Revision = 1.3
+  Current supplied (+) or consumed (-) =  -
+
+IDPROM for power-supply #1
+  (FRU is 'AC power supply, 6000 watt')
+  OEM String = 'Cisco Systems, Inc'
+  Product Number = 'WS-CAC-6000W'
+  Serial Number = 'AZS11200CH0'
+  Manufacturing Assembly Number = '341-0092-04'
+  Manufacturing Assembly Revision = 'A0'
+  Hardware Revision = 1.3
+  Current supplied (+) or consumed (-) = 63.60A
+
+IDPROM for power-supply #2
+  (FRU is 'AC power supply, 6000 watt')
+  OEM String = 'Cisco Systems, Inc'
+  Product Number = 'WS-CAC-6000W'
+  Serial Number = 'AZS11200CHP'
+  Manufacturing Assembly Number = '341-0092-04'
+  Manufacturing Assembly Revision = 'A0'
+  Hardware Revision = 1.3
+  Current supplied (+) or consumed (-) = 63.60A
+
+IDPROM for VTT #2
+  (FRU is 'VTT-E FRU')
+  OEM String = 'Cisco Systems'
+  Product Number = 'WS-C6K-VTT-E'
+  Serial Number = 'SMT1113D442'
+  Manufacturing Assembly Number = '73-9630-01'
+  Manufacturing Assembly Revision = 'A0'
+  Hardware Revision = 1.0
+  Current supplied (+) or consumed (-) =  -
+
+IDPROM for EARL #2
+  (FRU is 'Distributed Forwarding Card 3')
+  OEM String = 'Cisco Systems, Inc.'
+  Product Number = 'WS-F6700-DFC3CXL'
+  Serial Number = 'SAL12437EPY'
+
+QRA-KIO-SWCO01#show environment
+environmental alarms:
+  no alarms
+
+backplane: operating clock count: 2
+  operating VTT count: 3
+  operating fan count: 1
+
+fan-tray 1:
+  fan-tray 1 type: WS-C6509-E-FAN
+  fan-tray 1 mode: High-power
+  fan-tray 1 fan-fail: OK
+VTT 1:
+  VTT 1 OK: OK
+  VTT 1 outlet temperature: 26C
+VTT 2:
+  VTT 2 OK: OK
+  VTT 2 outlet temperature: 30C
+VTT 3:
+  VTT 3 OK: OK
+  VTT 3 outlet temperature: 28C
+clock 1:
+  clock 1 OK: OK, clock 1 clock-inuse: in-use
+clock 2:
+  clock 2 OK: OK, clock 2 clock-inuse: not-in-use
+power-supply 1:
+  power-supply 1 fan-fail: OK
+  power-supply 1 power-input: AC high
+  power-supply 1 power-output-mode: high
+  power-supply 1 incompatible with fan: OK
+  power-supply 1 power-output-fail: OK
+
+power-supply 2:
+  power-supply 2 fan-fail: OK
+  power-supply 2 power-input: AC high
+  power-supply 2 power-output-mode: high
+  power-supply 2 incompatible with fan: OK
+  power-supply 2 power-output-fail: OK
+
+module 1:
+  module 1 power-output-fail: OK
+  module 1 outlet temperature: 48C
+  module 1 inlet temperature: 34C
+  module 1 aux-1 temperature: 48C
+  module 1 aux-2 temperature: 37C
+  module 1 asic-1 temperature: 71C
+  module 1 asic-2 temperature: 69C
+  module 1 EARL outlet temperature: 36C
+
+
+chassis connector rating: 1302.00 Watts (31.00 Amps @ 42V)
+chassis auxiliary connector rating: 2016.00 Watts (48.00 Amps @ 42V)
+module 1
+  module 1 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
+  module 1 power consumption:  473.76 Watts (11.28 Amps @ 42V)
+module 2
+  module 2 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
+  module 2 power consumption:  473.76 Watts (11.28 Amps @ 42V)
+module 3
+  module 3 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
+  module 3 power consumption:  232.26 Watts ( 5.53 Amps @ 42V)
+module 5
+  module 5 connector rating: 1260.00 Watts (30.00 Amps @ 42V)
+  module 5 power consumption:  328.44 Watts ( 7.82 Amps @ 42V)
+module 6
+  module 6 connector rating: 1260.00 Watts (30.00 Amps @ 42V)
+  module 6 power consumption:  328.44 Watts ( 7.82 Amps @ 42V)
+
+chassis per slot cooling capacity: 94 cfm
+ambient temperature: < 55C
+  module 1 cooling requirement: 84 cfm
+  module 2 cooling requirement: 84 cfm
+  module 3 cooling requirement: 70 cfm
+  module 5 cooling requirement: 35 cfm
+  module 6 cooling requirement: 35 cfm
+
+QRA-KIO-SWCO01#show version
+Cisco IOS Software, s72033_rp Software (s72033_rp-ADVENTERPRISEK9-M), Version 15.1(2)SY6, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Thu 10-Sep-15 01:59 by prod_rel_team
+
+ROM: System Bootstrap, Version 12.2(17r)SX7, RELEASE SOFTWARE (fc1)
+BOOTLDR: Cisco IOS Software, s72033_rp Software (s72033_rp-ADVENTERPRISEK9-M), Version 15.1(2)SY6, RELEASE SOFTWARE (fc4)
+
+ QRA-KIO-SWCO01 uptime is 6 years, 43 weeks, 5 days, 12 hours, 34 minutes
+Uptime for this control processor is 6 years, 3 weeks, 3 days, 11 hours, 57 minutes
+System returned to ROM by Stateful Switchover at 04:02:37 UTC Wed May 29 2013 (SP by power on)
+System restarted at 22:39:08 MEX Mon Mar 13 2017
+System image file is "disk0:s72033-adventerprisek9-mz.151-2.SY6.bin"
+Last reload reason: Unknown reason
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C6509-E (R7000) processor (revision 1.3) with 983008K/65536K bytes of memory.
+Processor board ID SMC11200063
+SR71000 CPU at 600Mhz, Implementation 0x504, Rev 1.2, 512KB L2 Cache
+Last reset from s/w reset
+2 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+16 Ten Gigabit Ethernet interfaces
+1917K bytes of non-volatile configuration memory.
+
+65536K bytes of Flash internal SIMM (Sector size 512K).
+Configuration register is 0x2102
+
+QRA-KIO-SWCO01#exit
+Connection to 10.5.2.133 closed by remote host.
+Connection to 10.5.2.133 closed.
+root@back-discoverit:~#

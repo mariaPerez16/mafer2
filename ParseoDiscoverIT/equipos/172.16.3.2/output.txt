@@ -1,0 +1,62 @@
+Command: version
+Copyright (c) 1996-2016 Brocade Communications Systems, Inc. All rights reserved.
+    UNIT 1: compiled on Mar 07 2017 at 01:40:20 labeled as FCXR08030mb
+		(10579517 bytes) from Primary FCXR08030mb.bin
+        SW: Version 08.0.30mbT7f3 
+  Boot-Monitor Image size = 370695, Version:10.1.00T7f5 (grz10100)
+  HW: Stackable ICX6610-48
+==========================================================================
+UNIT 1: SL 1: ICX6610-48 48-port Management Module
+ 	 Serial  #: BXN3805N002
+ 	 License: ICX6610_BASE_ROUTER_SOFT_PACKAGE   (LID: dzpINFKpFFH)
+ 	 P-ENGINE  0: type E02B, rev 01
+ 	 P-ENGINE  1: type E02B, rev 01
+==========================================================================
+UNIT 1: SL 2: ICX6610-QSFP 10-port 160G Module
+==========================================================================
+UNIT 1: SL 3: ICX6610-8-port Dual Mode(SFP/SFP+) Module
+==========================================================================
+  800 MHz Power PC processor 8544E (version 0021/0023) 400 MHz bus
+65536 KB flash memory
+  512 MB DRAM
+STACKID 1  system uptime is 4 hour(s) 23 minute(s) 51 second(s) 
+The system : started=cold start	 
+My stack unit ID = 1, bootup role = activeCommand: chassis
+The stack unit 1 chassis info: 
+
+Power supply 1 (AC - Regular) present, status ok
+ 	Model Number:	23-0000144-01
+	Serial Number:	0B9      
+	Firmware Ver: 	 B
+Power supply 1 Fan Air Flow Direction:  Front to Back
+Power supply 2 not present
+
+Fan 1 ok, speed (auto): [[1]]<->2
+Fan 2 ok, speed (auto): [[1]]<->2
+
+Fan controlled temperature: 62.0 deg-C
+
+Fan speed switching temperature thresholds:
+		Speed 1: NM<----->80       deg-C
+		Speed 2:       75<-----> 85 deg-C (shutdown)
+
+Fan 1 Air Flow Direction:  Front to Back 
+Fan 2 Air Flow Direction:  Front to Back 
+MAC 1 Temperature Readings:
+	Current temperature : 49.0 deg-C
+MAC 2 Temperature Readings:
+	Current temperature : 58.0 deg-C
+CPU Temperature Readings:
+	Current temperature : 62.0 deg-C
+sensor A Temperature Readings:
+	Current temperature : 43.5 deg-C
+sensor B Temperature Readings:
+	Current temperature : 53.5 deg-C
+sensor C Temperature Readings:
+	Current temperature : 39.5 deg-C
+stacking card Temperature Readings:
+	Current temperature : 60.0 deg-C
+	Warning level.......: 82.0 deg-C
+	Shutdown level......: 85.0 deg-C
+Boot Prom MAC : 609c.9f48.0c2c
+Management MAC: 609c.9f48.0c2c

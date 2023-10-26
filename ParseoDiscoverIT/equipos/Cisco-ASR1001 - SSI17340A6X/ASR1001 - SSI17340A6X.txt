@@ -1,0 +1,35 @@
++++PARSEO+++:
+
+Modelo: ASR1001 
+Numero de serie: SSI17340A6X
+Numero de parte: ASR1001
+Version: 15.4(3)S4
+Hostname: 56A-KIO-RTIN03
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+Modulo: Power Supply Module 0
+Descripcion: Cisco ASR1001 AC Power Supply
+PID: ASR1001-PWR-AC
+Numero de serie: 
+
+
+Informacion power supply 2
+Modulo: Power Supply Module 1
+Descripcion: Cisco ASR1001 AC Power Supply
+PID: ASR1001-PWR-AC
+Numero de serie: MP51734003G
+
+
+Cantidad de ventiladores es 1 en el equipo ASR1001 
+
+Informacion ventilador 1
+Modulo: Fan Tray
+Modelo: ASR1001 
+
+
+Cantidad de modulos es 0 en el equipo ASR1001 
+
+
+

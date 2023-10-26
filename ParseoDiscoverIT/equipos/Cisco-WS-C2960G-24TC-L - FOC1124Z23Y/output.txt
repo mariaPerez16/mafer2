@@ -1,0 +1,204 @@
+root@back-discoverit:~# ssh careit@10.60.26.7
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso NOele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+(careit@10.60.26.7) password:
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+SERVICIOS DE TECNOLOGIAS DE INFORMACION
+DE MISION CRITICA
+TAKE IT EASY!!!
+
+QR5-KIO-SWKL09#show version
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(55)SE10, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Wed 11-Feb-15 11:46 by prod_rel_team
+Image text-base: 0x00003000, data-base: 0x01900000
+
+ROM: Bootstrap program is C2960 boot loader
+BOOTLDR: C2960 Boot Loader (C2960-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
+
+QR5-KIO-SWKL09 uptime is 3 years, 30 weeks, 13 hours, 3 minutes
+System returned to ROM by power-on
+System restarted at 22:07:58 MEX Sun Sep 8 2019
+System image file is "flash:c2960-lanbasek9-mz.122-55.SE10.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960G-24TC-L (PowerPC405) processor (revision D0) with 65536K bytes of memory.
+Processor board ID FOC1124Z23Y
+Last reset from power-on
+3 Virtual Ethernet interfaces
+24 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 00:1C:B0:4A:43:80
+Motherboard assembly number     : 73-10015-06
+Power supply part number        : 341-0098-02
+Motherboard serial number       : FOC11240HFW
+Power supply serial number      : AZS11152661
+Model revision number           : D0
+Motherboard revision number     : A0
+Model number                    : WS-C2960G-24TC-L
+System serial number            : FOC1124Z23Y
+Top Assembly Part Number        : 800-26673-03
+Top Assembly Revision Number    : A0
+Version ID                      : V03
+CLEI Code Number                : COM3G00BRB
+Hardware Board Revision Number  : 0x01
+
+
+Switch Ports Model              SW Version            SW Image
+------ ----- -----              ----------            ----------
+*    1 24    WS-C2960G-24TC-L   12.2(55)SE10          C2960-LANBASEK9-M
+
+
+Configuration register is 0xF
+
+QR5-KIO-SWKL09#show env all
+FAN is OK
+TEMPERATURE is OK
+
+POWER is OK
+RPS is NOT PRESENT
+QR5-KIO-SWKL09#show inventory
+NAME: "1", DESCR: "WS-C2960G-24TC-L"
+PID: WS-C2960G-24TC-L  , VID: V03  , SN: FOC1124Z23Y
+
+
+QR5-KIO-SWKL09#show inventory raw
+NAME: "1", DESCR: "WS-C2960G-24TC-L"
+PID: WS-C2960G-24TC-L  , VID: V03  , SN: FOC1124Z23Y
+
+NAME: "WS-C2960G-24TC-L - Power Supply 0", DESCR: "WS-C2960G-24TC-L - Power Supply 0"
+PID:                   , VID:      , SN: AZS11152661
+
+NAME: "WS-C2960G-24TC-L - Fan 0", DESCR: "WS-C2960G-24TC-L - Fan 0"
+PID:                   , VID:      , SN:
+
+NAME: "WS-C2960G-24TC-L - Fixed Module 0", DESCR: "WS-C2960G-24TC-L - Fixed Module 0"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/21 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/21", DESCR: "GigabitEthernet0/21"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/22 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/22", DESCR: "GigabitEthernet0/22"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/23 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/23", DESCR: "GigabitEthernet0/23"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/24 Container", DESCR: "GigabitEthernet Container"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/24", DESCR: "GigabitEthernet0/24"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/1", DESCR: "GigabitEthernet0/1"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/2", DESCR: "GigabitEthernet0/2"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/3", DESCR: "GigabitEthernet0/3"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/4", DESCR: "GigabitEthernet0/4"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/5", DESCR: "GigabitEthernet0/5"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/6", DESCR: "GigabitEthernet0/6"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/7", DESCR: "GigabitEthernet0/7"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/8", DESCR: "GigabitEthernet0/8"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/9", DESCR: "GigabitEthernet0/9"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/10", DESCR: "GigabitEthernet0/10"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/11", DESCR: "GigabitEthernet0/11"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/12", DESCR: "GigabitEthernet0/12"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/13", DESCR: "GigabitEthernet0/13"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/14", DESCR: "GigabitEthernet0/14"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/15", DESCR: "GigabitEthernet0/15"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/16", DESCR: "GigabitEthernet0/16"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/17", DESCR: "GigabitEthernet0/17"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/18", DESCR: "GigabitEthernet0/18"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/19", DESCR: "GigabitEthernet0/19"
+PID:                   , VID:      , SN:
+
+NAME: "GigabitEthernet0/20", DESCR: "GigabitEthernet0/20"
+PID:                   , VID:      , SN:
+
+
+QR5-KIO-SWKL09#exit
+Connection to 10.60.26.7 closed.
+root@back-discoverit:~#

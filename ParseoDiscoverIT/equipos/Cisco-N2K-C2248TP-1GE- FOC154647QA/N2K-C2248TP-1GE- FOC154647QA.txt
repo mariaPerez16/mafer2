@@ -1,0 +1,37 @@
++++PARSEO+++:
+Modulo: FEX 190 Module 1
+Hostname: 56L-KIO-SWBK01
+Modelo: N2K-C2248TP-1GENumero de serie: FOC154647QA
+Numero de parte: N2K-C2248TP-1GE
+Version del firmware: 7.0(8)N1(1)
+Descripcion: Fabric Extender Module: 48x1GE, 4x10GE Supervisor
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 190 Power Supply 1
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: DTN1542P0D7
+
+Informacion power supply 2
+Modulo: FEX 190 Power Supply 2
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: DTN1542P0CQ
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 190 Fan 1
+Modelo: N2K-C2248-FAN
+Descripcion: Fabric Extender Fan module
+PID: N2K-C2248-FAN
+Numero de serie: N/A
+
+
+No hay modulos
+

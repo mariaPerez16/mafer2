@@ -1,0 +1,102 @@
++++PARSEO+++:
+
+Modelo: N7K-C7010 
+Numero de serie: TBM14375673
+Numero de parte: N7K-C7010
+Version: 6.2(14)
+Hostname: 56A-KIO-SWAG01
+
+Cantidad de power supply: 3
+
+Informacion power supply 1
+Modulo: Slot 33
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Power Supply
+PID: N7K-AC-6.0KW
+Numero de serie: DTM133904GN
+
+Informacion power supply 2
+Modulo: Slot 34
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Power Supply
+PID: N7K-AC-6.0KW
+Numero de serie: DTM1939011Z
+
+Informacion power supply 3
+Modulo: Slot 35
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Power Supply
+PID: N7K-AC-6.0KW
+Numero de serie: DTM171101ZY
+
+
+Cantidad de ventiladores es 4 en el equipo N7K-C7010 
+
+Informacion ventilador 1
+Modulo: Slot 36
+Modelo: N7K-C7010-FAN-S 
+Numero de serie: FOX1433XAQ2
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Fan Module
+
+Informacion ventilador 2
+Modulo: Slot 37
+Modelo: N7K-C7010-FAN-S 
+Numero de serie: FOX1433XAL6
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Fan Module
+
+Informacion ventilador 3
+Modulo: Slot 38
+Modelo: N7K-C7010-FAN-F 
+Numero de serie: FOX1434XB00
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Fan Module
+
+Informacion ventilador 4
+Modulo: Slot 39
+Modelo: N7K-C7010-FAN-F 
+Numero de serie: FOX1432XA5T
+Descripcion: Nexus7000 C7010 (10 Slot) Chassis Fan Module
+
+
+Cantidad de modulos es 7 en el equipo N7K-C7010 
+
+Informacion modulo 1
+Modulo: Slot 1
+Modelo: N7K-M108X2-12L 
+Numero de serie: JAF1444APJP
+Descripcion: 10 Gbps Ethernet XL Module
+
+Informacion modulo 2
+Modulo: Slot 2
+Modelo: N7K-M108X2-12L 
+Numero de serie: JAF1444CGSJ
+Descripcion: 10 Gbps Ethernet XL Module
+
+Informacion modulo 3
+Modulo: Slot 3
+Modelo: N7K-M132XP-12 
+Numero de serie: JAF1512BPAH
+Descripcion: 10 Gbps Ethernet Module
+
+Informacion modulo 4
+Modulo: Slot 4
+Modelo: N7K-F132XP-15 
+Numero de serie: JAF1729AKPD
+Descripcion: 1/10 Gbps Ethernet Module
+
+Informacion modulo 5
+Modulo: Slot 7
+Modelo: N7K-M132XP-12 
+Numero de serie: JAF1430FHAL
+Descripcion: 10 Gbps Ethernet Module
+
+Informacion modulo 6
+Modulo: Slot 5
+Modelo: N7K-SUP1 
+Numero de serie: JAF1444BLJH
+Descripcion: Supervisor Module-1X
+
+Informacion modulo 7
+Modulo: Slot 6
+Modelo: N7K-SUP1 
+Numero de serie: JAF1444BLMM
+Descripcion: Supervisor Module-1X
+
+
+

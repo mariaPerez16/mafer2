@@ -1,0 +1,39 @@
++++PARSEO+++:
+
+Modulo: FEX 101 CHASSIS
+Hostname: 565-KIO-SWKL01
+Modelo: N2K-C2232PP-10GE
+Numero de serie: SSI16490ATQ
+Numero de parte: N2K-C2232PP-10GE
+Version del firmware: 5.2(1)N1(8a)
+Descripcion: N2K-C2232PP-10GE  CHASSIS
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 101 Power Supply 1
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: DTN1707P073
+
+Informacion power supply 2
+Modulo: FEX 101 Power Supply 2
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: DTN1707P025
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 101 Fan 1
+Modelo: N2K-C2232-FAN
+Descripcion: Fabric Extender Fan module
+PID: N2K-C2232-FAN
+Numero de serie: N/A
+
+
+No hay modulos
+

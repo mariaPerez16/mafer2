@@ -1,0 +1,149 @@
+root@back-discoverit:~# ssh careit@10.50.105.132
+
+"Esta accediendo a un sistema privado.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido.
+Los usuarios, al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de
+para aplicar medidas disciplinarias pertinentes."
+(careit@10.50.105.132) password:
+
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+
+SERVICIOS DE TECNOLOGIAS DE INFORMACION
+DE MISION CRITICA
+TAKE IT EASY!!!
+56L-KIO-SWST01#show version
+Cisco IOS Software, IOS-XE Software, Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 03.03.03SE RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Sun 27-Apr-14 18:33 by prod_rel_team
+
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2014 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.
+(http://www.gnu.org/licenses/gpl-2.0.html) For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: CAT3K_CAA Boot Loader (CAT3K_CAA-HBOOT-M) Version 1.2, RELEASE SOFTWARE (P)
+
+56L-KIO-SWST01 uptime is 5 years, 30 weeks, 2 days, 23 hours, 27 minutes
+Uptime for this control processor is 5 years, 30 weeks, 2 days, 23 hours, 29 minutes
+System returned to ROM by reload at 13:09:05 MEX Wed Sep 6 2017
+System restarted at 12:33:58 MEX Wed Sep 6 2017
+System image file is "flash:packages.conf"
+Last reload reason: Reload command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+
+56L-KIO-SWST01#show env all
+Switch 1 FAN 1 is OK
+Switch 1 FAN 2 is OK
+FAN PS-1 is OK
+FAN PS-2 is OK
+Switch 1: SYSTEM TEMPERATURE is OK
+SW  PID                 Serial#     Status           Sys Pwr  PoE Pwr  Watts
+--  ------------------  ----------  ---------------  -------  -------  -----
+1A  PWR-C2-250WAC       LIT18071758  OK              Good     Good     250
+1B  PWR-C2-250WAC       LIT180717V2  OK              Good     Good     250
+
+56L-KIO-SWST01#show inventory
+NAME: "c3xxx Stack", DESCR: "c3xxx Stack"
+PID: WS-C3650-24TS     , VID: D0   , SN: FDO1839E20Q
+
+NAME: "Switch 1", DESCR: "WS-C3650-24TS"
+PID: WS-C3650-24TS     , VID: D0   , SN: FDO1839E20Q
+
+NAME: "Switch 1 - Power Supply A", DESCR: "Switch 1 - Power Supply A"
+PID: PWR-C2-250WAC     , VID: V01  , SN: LIT18071758
+
+NAME: "Switch 1 - Power Supply B", DESCR: "Switch 1 - Power Supply B"
+PID: PWR-C2-250WAC     , VID: V01  , SN: LIT180717V2
+
+
+56L-KIO-SWST01#show inventory raw
+NAME: "c3xxx Stack", DESCR: "c3xxx Stack"
+PID: WS-C3650-24TS     , VID: D0   , SN: FDO1839E20Q
+
+NAME: "Switch 1", DESCR: "WS-C3650-24TS"
+PID: WS-C3650-24TS     , VID: D0   , SN: FDO1839E20Q
+
+NAME: "Switch 1 - Power Supply A Container", DESCR: "Switch 1 - WS-C3650-24TS - Power Supply A Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Power Supply A", DESCR: "Switch 1 - Power Supply A"
+PID: PWR-C2-250WAC     , VID: V01  , SN: LIT18071758
+
+NAME: "Switch 1 - Power Supply B Container", DESCR: "Switch 1 - WS-C3650-24TS - Power Supply B Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Power Supply B", DESCR: "Switch 1 - Power Supply B"
+PID: PWR-C2-250WAC     , VID: V01  , SN: LIT180717V2
+
+NAME: "Switch 1 - Fan 1 Container", DESCR: "Switch 1 - WS-C3650-24TS - Fan 1 Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - FAN 1", DESCR: "Switch 1 - WS-C3650-24TS - FAN 1"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Fan 2 Container", DESCR: "Switch 1 - WS-C3650-24TS - Fan 2 Container"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - FAN 2", DESCR: "Switch 1 - WS-C3650-24TS - FAN 2"
+PID:                   , VID:      , SN:
+
+
+NAME: "Switch 1 - Temp Sensor 0", DESCR: "Switch 1 - WS-C3650-24TS - Temp Inlet Sensor 0"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Temp Sensor 1", DESCR: "Switch 1 - WS-C3650-24TS - Temp Outlet Sensor 1"
+PID:                   , VID:      , SN:
+
+NAME: "Switch 1 - Temp Sensor 2", DESCR: "Switch 1 - WS-C3650-24TS - Temp HotSpot Sensor 2"
+PID:                   , VID:      , SN:
+
+
+56L-KIO-SWST01#exit
+Connection to 10.50.105.132 closed by remote host.
+Connection to 10.50.105.132 closed.
+root@back-discoverit:~#

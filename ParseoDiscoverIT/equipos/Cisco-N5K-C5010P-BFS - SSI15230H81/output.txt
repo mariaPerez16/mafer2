@@ -1,0 +1,144 @@
+root@back-discoverit:~# ssh careit@10.50.3.251
+
+
+                                _/   _/  _/_/_/_/   _/_/_/_/
+                               _/  _/       _/     _/    _/
+                              _/ _/        _/     _/    _/
+                             _/_/         _/     _/    _/
+                            _/  _/       _/     _/    _/
+                           _/    _/     _/     _/    _/
+                          _/      _/ _/_/_/_/ _/_/_/_/
+
+      _/       _/ _/_/_/ _/_/_/_/ _/       _/ _/_/_/ _/_/_/_/ _/   _/   _/_/_/
+     _/_/     _/ _/        _/    _/       _/ _/  _/ _/    _/ _/  _/    _/
+    _/ _/    _/ _/        _/    _/       _/ _/  _/ _/    _/ _/ _/     _/
+   _/   _/  _/ _/_/_/    _/    _/  _/   _/ _/  _/ _/_/_/_/ _/_/      _/_/_/
+  _/    _/ _/ _/        _/    _/ _/ _/ _/ _/  _/ _/  _/   _/ _/         _/
+ _/     _/_/ _/        _/    _/_/   _/_/ _/  _/ _/   _/  _/   _/       _/
+_/       _/ _/_/_/    _/    _/       _/ _/_/_/ _/    _/ _/     _/ _/_/_/
+"Esta accediendo a un sistema propiedad de KIO Networks.
+El usuario autorizado es responsable de proteger la informacion, mantener el
+secreto profesional e informar del mal uso de los sistemas de informacion.
+El acceso no autorizado a este sistema o el uso indebido del mismo esta
+prohibido y es contrario a las Politicas de KIO Networks. Los usuarios,
+al dar su consentimiento, seran objetos de monitoreo del uso de la tecnologia.
+En caso de que este uso revele una posible actividad delictiva o no etica,
+el personal de seguridad puede proporcionar la evidencia de para aplicar
+medidas disciplinarias pertinentes".
+(careit@10.50.3.251) Password:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+565-KIO-SWKL02# show inventory
+NAME: "Chassis", DESCR: "Nexus5010 Chassis"
+PID: N5K-C5010P-BFS    , VID: V03 , SN: SSI15230H81
+
+NAME: "Module 1", DESCR: "20x10GE/Supervisor"
+PID: N5K-C5010P-BFS    , VID: V03 , SN: FOC15270BA5
+
+NAME: "Module 2", DESCR: "6x1/2/4/8G FC Module"
+PID: N5K-M1060         , VID: V01 , SN: FOC15240DPX
+
+NAME: "Fan 1", DESCR: "Chassis fan module"
+PID: N5K-C5010-FAN     , VID: N/A , SN: N/A
+
+NAME: "Fan 2", DESCR: "Chassis fan module"
+PID: N5K-C5010-FAN     , VID: N/A , SN: N/A
+
+NAME: "Power supply 1", DESCR: "AC power supply"
+PID: N5K-PAC-550W      , VID: V02 , SN: DTM151300U9
+
+NAME: "Power supply 2", DESCR: "AC power supply"
+PID: N5K-PAC-550W      , VID: V02 , SN: DTM151300U8
+
+NAME: "FEX 101 CHASSIS", DESCR: "N2K-C2232PP-10GE  CHASSIS"
+PID: N2K-C2232PP-10GE  , VID: V03 , SN: SSI16490AV6
+
+NAME: "FEX 101 Module 1", DESCR: "Fabric Extender Module: 32x10GE, 8x10GE Supervisor"
+PID: N2K-C2232PP-10GE  , VID: V03 , SN: FOC17093CP0
+
+NAME: "FEX 101 Fan 1", DESCR: "Fabric Extender Fan module"
+PID: N2K-C2232-FAN     , VID: N/A , SN: N/A
+
+NAME: "FEX 101 Power Supply 1", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V04 , SN: DTN1707P0V8
+
+NAME: "FEX 101 Power Supply 2", DESCR: "Fabric Extender AC power supply"
+PID: N2200-PAC-400W    , VID: V04 , SN: DTN1707P0VP
+
+565-KIO-SWKL02#
+565-KIO-SWKL02# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2015, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Software
+  BIOS:      version 1.5.0
+  loader:    version N/A
+  kickstart: version 5.2(1)N1(9)
+  system:    version 5.2(1)N1(9)
+  power-seq: Module 1: version v1.2
+  BIOS compile time:       11/30/10
+  kickstart image file is: bootflash:///n5000-uk9-kickstart.5.2.1.N1.9.bin
+  kickstart compile time:  4/28/2015 7:00:00 [04/28/2015 10:20:48]
+  system image file is:    bootflash:///n5000-uk9.5.2.1.N1.9.bin
+  system compile time:     4/28/2015 7:00:00 [04/28/2015 11:24:34]
+
+
+Hardware
+  cisco Nexus5010 Chassis ("20x10GE/Supervisor")
+  Intel(R) Celeron(R) M CPU    with 2065504 kB of memory.
+  Processor Board ID FOC15270BA5
+
+  Device name: 565-KIO-SWKL02
+  bootflash:    1003520 kB
+
+Kernel uptime is 1336 day(s), 1 hour(s), 6 minute(s), 14 second(s)
+
+Last reset at 592068 usecs after  Thu Sep  5 14:13:20 2019
+
+  Reason: Power down due to temperature sensor policy trigger
+  System version: 5.2(1)N1(9)
+  Service:
+
+plugin
+  Core Plugin, Ethernet Plugin, Fc Plugin
+565-KIO-SWKL02# show module
+Mod Ports Module-Type                       Model                  Status
+--- ----- --------------------------------- ---------------------- ------------
+1   20    20x10GE/Supervisor                N5K-C5010P-BFS-SUP     active *
+2   6     6x1/2/4/8G FC Module              N5K-M1060              ok
+
+Mod  Sw              Hw      World-Wide-Name(s) (WWN)
+---  --------------  ------  --------------------------------------------------
+1    5.2(1)N1(9)     1.2     --
+2    5.2(1)N1(9)     1.0     20:41:54:7f:ee:0a:3f:80 to 20:46:54:7f:ee:0a:3f:80
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    547f.ee0a.3f88 to 547f.ee0a.3faf         FOC15270BA5
+2    547f.ee0a.3fb0 to 547f.ee0a.3fb7         FOC15240DPX
+565-KIO-SWKL02#
+565-KIO-SWKL02#
+565-KIO-SWKL02# show Fe
+Feature       Feature-set   Fex
+565-KIO-SWKL02# show Fex
+  FEX         FEX           FEX                       FEX
+Number    Description      State            Model            Serial
+------------------------------------------------------------------------
+101    FEX101-2232                Online    N2K-C2232PP-10GE   SSI16490AV6
+565-KIO-SWKL02#

@@ -1,0 +1,28 @@
++++PARSEO+++:
+
+Modelo: WS-C2960G-24TC-L 
+Numero de serie: FOC1124Z23Y
+Numero de parte: WS-C2960G-24TC-L
+Version: 12.2(55)SE10
+Hostname: QR5-KIO-SWKL09
+
+Cantidad de power supply: 1
+
+Informacion power supply 1
+Modulo: Power Supply 0
+Descripcion: WS-C2960G-24TC-L - Power Supply 0
+PID:  
+Numero de serie: AZS11152661
+
+
+Cantidad de ventiladores es 1 en el equipo WS-C2960G-24TC-L 
+
+Informacion ventilador 1
+Modulo: Fan 0
+Modelo: WS-C2960G-24TC-L 
+
+
+Cantidad de modulos es 0 en el equipo WS-C2960G-24TC-L 
+
+
+

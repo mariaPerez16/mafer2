@@ -1,0 +1,60 @@
++++PARSEO+++:
+
+Modelo: N7K-C7009 
+Numero de serie: JAF1735ADFE
+Numero de parte: N7K-C7009
+Version: 6.2(16)
+Hostname: QRK-KIO-SWAG01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: Slot 33
+Descripcion: Nexus7000 C7009 (9 Slot) Chassis Power Supply
+PID: N7K-AC-6.0KW
+Numero de serie: AZS1737008E
+
+Informacion power supply 2
+ID: Slot 34
+Descripcion: Nexus7000 C7009 (9 Slot) Chassis Power Supply
+PID: N7K-AC-6.0KW
+Numero de serie: AZS1737008B
+
+
+Cantidad de ventiladores es 1 en el equipo N7K-C7009 
+
+Informacion ventilador 1
+ID: Slot 35
+Modelo: N7K-C7009-FAN 
+Numero de serie: JAF1733ASEB
+Descripcion: Nexus7000 C7009 (9 Slot) Chassis Fan Module
+
+
+Cantidad de modulos es 4 en el equipo N7K-C7009 
+
+Informacion modulo 1
+ID: Slot 5
+Modelo: N7K-F248XP-25E 
+Numero de serie: JAF1715BFAS
+Descripcion: 1/10 Gbps Ethernet Module
+
+Informacion modulo 2
+ID: Slot 7
+Modelo: N7K-F248XP-25E 
+Numero de serie: JAF1741ASRD
+Descripcion: 1/10 Gbps Ethernet Module
+
+Informacion modulo 3
+ID: Slot 1
+Modelo: N7K-SUP2E 
+Numero de serie: JAF1743APRP
+Descripcion: Supervisor Module-2
+
+Informacion modulo 4
+ID: Slot 2
+Modelo: N7K-SUP2E 
+Numero de serie: JAF1743AQKP
+Descripcion: Supervisor Module-2
+
+
+

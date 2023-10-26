@@ -1,0 +1,142 @@
+Command: version
+Result:
+==========================================================================
+Active Management CPU [Slot-10]:
+  SW: Version 05.0.00bT3e1 Copyright (c) 1996-2009 Foundry Networks, Inc.
+      Compiled on Apr 09 2009 at 16:19:51 labeled as SXS05000b
+      (2502244 bytes) from Primary /FESX500b/SXS05000b.bin
+      BootROM: Version 05.0.00T3e5 (FEv2)
+  HW: Chassis FastIron SX 800
+      Serial  #: SA31075059
+  HW: Chassis FastIron SX 800
+==========================================================================
+SL 3: SX-FI424C 24-port Gig Copper
+      Serial  #: CY19077870
+      P-ASIC  4: type 00D1, rev D2  subrev 00
+      P-ASIC  5: type 00D1, rev D2  subrev 00
+==========================================================================
+SL 10: SX-FI2XGMR4 2-port Management
+      Serial  #: CH10080338
+      P-ASIC 18: type 01D1, rev 00  subrev 00
+      P-ASIC 19: type 01D1, rev 00  subrev 00
+==========================================================================
+Active Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+The system uptime is 1 hours 2 minutes 29 seconds 
+The system : started=cold start
+
+Command: chassis
+Result:
+Chassis Type: FastIron SX 800
+
+Power supply 1 not present
+Power supply 2 not present
+Power supply 3 (32005000 - AC - Regular) present, status ok
+Power supply 4 (32005000 - AC - Regular) present, status ok
+
+Fan 1 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 2 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 3 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 4 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 5 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 6 ok, speed (auto): [[1]]<->2<->3<->4
+Fan 7 not present
+
+Fan controlled temperature: 
+	Rule 1/3 (MGMT CARDS THERMAL PLANE): 39.5 deg-C
+	Rule 2/3 (LINE CARDS THERMAL PLANE): 47.0 deg-C
+	Rule 3/3 (SWITCH FABRIC CARDS THERMAL PLANE): 51.0 deg-C
+
+Fan speed switching temperature thresholds:
+	Rule 1/3 (MGMT CARDS THERMAL PLANE):
+		Speed 1: NM<----->57                            deg-C
+		Speed 2:       48<----->58                      deg-C
+		Speed 3:             49<----->59                deg-C
+		Speed 4:                   50<----->80          deg-C (shutdown)
+	Rule 2/3 (LINE CARDS THERMAL PLANE):
+		Speed 1: NM<----->57                            deg-C
+		Speed 2:       48<----->58                      deg-C
+		Speed 3:             49<----->59                deg-C
+		Speed 4:                   50<----->80          deg-C (shutdown)
+	Rule 3/3 (SWITCH FABRIC CARDS THERMAL PLANE):
+		Speed 1: NM<----->57                            deg-C
+		Speed 2:       48<----->58                      deg-C
+		Speed 3:             49<----->59                deg-C
+		Speed 4:                   50<----->80          deg-C (shutdown)
+
+Slot  1 Temperature: empty
+Slot  2 Temperature: empty
+Slot  3 Temperature: 47.0 deg-C
+Slot  4 Temperature: empty
+Slot  5 Temperature: empty
+Slot  6 Temperature: empty
+Slot  7 Temperature: empty
+Slot  8 Temperature: empty
+Slot  9 Temperature: empty
+Slot 10 Temperature: 39.5 deg-C
+  SF  1 Temperature: 49.0 deg-C
+  SF  2 Temperature: 51.0 deg-C
+Boot Prom MAC: 0012.f224.4f00
+
+Command: module
+Result:
+Module                                 Status    Ports Starting MAC  
+ F1: SX-FISF Switch Fabric                  active   
+ F2: SX-FISF Switch Fabric                  active   
+ S1: Configured as SX-FI42XG 2-port 10G                  
+ S2: 
+ S3: SX-FI424C 24-port Gig Copper           OK         24   0012.f224.4f30
+ S4: 
+ S5: 
+ S6: 
+ S7: 
+ S8: 
+ S9:                                        Standby     0
+S10: SX-FI2XGMR4 2-port Management          Active      2   0012.f224.4fd8
+     { Status : OK }
+
+Command: run
+Result:
+Current configuration:
+!
+ver 05.0.00bT3e1
+!
+module 1 fi-sx4-2-port-10g-module
+module 3 fi-sx4-24-port-gig-copper-module
+module 10 fi-sx4-2-10g-port-management-module
+!
+!
+!
+vlan 1 name DEFAULT-VLAN by port
+!
+vlan 60 by port
+!
+!
+!
+!
+!
+!
+aaa authentication login default local
+enable super-user-password .....
+hostname FASTIRONSX800
+ip address 172.16.3.16 255.255.255.192
+ip default-gateway 172.16.3.1
+username alpha password .....
+snmp-server community ..... ro
+snmp-server community ..... ro
+set-active-mgmt mgmt1
+!
+!
+!
+!
+!
+!
+end
+
+Command: host
+Result:
+hostname FASTIRONSX800
+

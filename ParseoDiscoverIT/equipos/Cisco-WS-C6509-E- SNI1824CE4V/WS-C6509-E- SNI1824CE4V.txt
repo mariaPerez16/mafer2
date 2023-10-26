@@ -1,0 +1,36 @@
++++PARSEO+++:
+
+Modelo: WS-C6509-E
+Numero de serie: SNI1824CE4V
+Numero de parte: WS-C6509-E
+Version: 15.1(2)SY6
+Hostname: 56A-KIO-SWCO01
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: power-supply #1
+Descripcion: FRU is '220v AC power supply, 4000 watt'
+Modelo: WS-CAC-4000W-US
+PID: 34-1694-12
+Numero de serie: SNI1824CE4V
+
+Informacion power supply 2
+ID: power-supply #2
+Descripcion: FRU is '220v AC power supply, 4000 watt'
+Modelo: WS-CAC-4000W-US
+PID: 34-1694-12
+Numero de serie: SNI1824CE4S
+
+
+Cantidad de ventiladores es 1 en el equipo WS-C6509-E
+
+Informacion ventilador 1
+ID: fan-tray 1
+Modelo: WS-C6509-E
+
+
+Cantidad de modulos es 0 en el equipo WS-C6509-E
+
+
+

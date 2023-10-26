@@ -1,0 +1,37 @@
++++PARSEO+++:
+Modulo: FEX 100 Module 1
+Hostname: 56L-KIO-SWBK01
+Modelo: N2K-C2232PP-10GENumero de serie: FOC154725AX
+Numero de parte: N2K-C2232PP-10GE
+Version del firmware: 7.0(8)N1(1)
+Descripcion: Fabric Extender Module: 32x10GE, 8x10GE Supervisor
+
+
+
+Power Supply: 
+
+Informacion power supply 1
+Modulo: FEX 100 Power Supply 1
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: LIT154500E3
+
+Informacion power supply 2
+Modulo: FEX 100 Power Supply 2
+Descripcion: Fabric Extender AC power supply
+PID: N2200-PAC-400W
+Numero de serie: LIT154500E6
+
+
+Fan: 
+
+Informacion fan 1
+Modulo: FEX 100 Fan 1
+Modelo: N2K-C2232-FAN
+Descripcion: Fabric Extender Fan module
+PID: N2K-C2232-FAN
+Numero de serie: N/A
+
+
+No hay modulos
+
