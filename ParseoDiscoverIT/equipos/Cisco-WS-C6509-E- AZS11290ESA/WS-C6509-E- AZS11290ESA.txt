@@ -1,0 +1,155 @@
++++PARSEO+++:
+
+Modelo: WS-C6509-E
+Numero de serie: AZS11290ESA
+Numero de parte: WS-C6509-E
+Version: 15.1(2)SY6
+Hostname: MX1-KIO-SWAG02
+
+Cantidad de power supply: 2
+
+Informacion power supply 1
+ID: power-supply #1
+Descripcion: AC power supply, 6000 watt
+Modelo: WS-CAC-6000W
+PID: 341-0092-04
+Numero de serie: AZS11290ESA
+
+Informacion power supply 2
+ID: power-supply #2
+Descripcion: AC power supply, 6000 watt
+Modelo: WS-CAC-6000W
+PID: 341-0092-04
+Numero de serie: AZS11290TY2
+
+
+Cantidad de ventiladores es 1 en el equipo WS-C6509-E
+
+Informacion ventilador 1
+ID: fan-tray 1
+Modelo: WS-C6509-E
+
+
+Cantidad de tarjetas es 8 en el equipo WS-C6509-E
+
+Informacion tarjeta 1
+Slot: 1
+Numero de puertos: 8
+Modelo: WS-X6708-10GE
+Numero de serie: SAD113103RZ
+Descripcion: CEF720 8 port 10GE with DFC            
+
+Informacion tarjeta 2
+Slot: 2
+Numero de puertos: 48
+Modelo: WS-X6748-GE-TX
+Numero de serie: SAL1132WY1D
+Descripcion: CEF720 48 port 10/100/1000mb Ethernet  
+
+Informacion tarjeta 3
+Slot: 3
+Numero de puertos: 48
+Modelo: WS-X6748-GE-TX
+Numero de serie: SAL1427LXC0
+Descripcion: CEF720 48 port 10/100/1000mb Ethernet  
+
+Informacion tarjeta 4
+Slot: 4
+Numero de puertos: 48
+Modelo: WS-X6748-GE-TX
+Numero de serie: SAL1132XASU
+Descripcion: CEF720 48 port 10/100/1000mb Ethernet  
+
+Informacion tarjeta 5
+Slot: 5
+Numero de puertos: 2
+Modelo: WS-SUP720-3BXL
+Numero de serie: SAL1718468S
+Descripcion: Supervisor Engine 720 (Active)         
+
+Informacion tarjeta 6
+Slot: 6
+Numero de puertos: 2
+Modelo: WS-SUP720-3BXL
+Numero de serie: SAL160533JZ
+Descripcion: Supervisor Engine 720 (Hot)            
+
+Informacion tarjeta 7
+Slot: 7
+Numero de puertos: 48
+Modelo: WS-X6748-GE-TX
+Numero de serie: SAL1025S4K6
+Descripcion: CEF720 48 port 10/100/1000mb Ethernet  
+
+Informacion tarjeta 8
+Slot: 8
+Numero de puertos: 8
+Modelo: WS-X6708-10GE
+Numero de serie: SAL1443XFSX
+Descripcion: CEF720 8 port 10GE with DFC            
+
+
+Cantidad de sub-modulos es 10 en el equipo WS-C6509-E
+
+Informacion modulo 1
+Slot: 1
+Modelo: WS-F6700-DFC3CXL
+Numero de serie: SAL1131W1EA
+Descripcion: Distributed Forwarding Card 
+
+Informacion modulo 2
+Slot: 2
+Modelo: WS-F6700-DFC3BXL
+Numero de serie: SAD112208VS
+Descripcion: Distributed Forwarding Card 
+
+Informacion modulo 3
+Slot: 3
+Modelo: WS-F6700-DFC3BXL
+Numero de serie: SAL1250CMZD
+Descripcion: Distributed Forwarding Card 
+
+Informacion modulo 4
+Slot: 4
+Modelo: WS-F6700-DFC3BXL
+Numero de serie: SAD112208SB
+Descripcion: Distributed Forwarding Card 
+
+Informacion modulo 5
+Slot: 5
+Modelo: WS-F6K-PFC3BXL
+Numero de serie: SAL171843SX
+Descripcion: Policy Feature Card 3       
+
+Informacion modulo 6
+Slot: 5
+Modelo: WS-SUP720
+Numero de serie: SAL1718461S
+Descripcion: MSFC3 Daughterboard         
+
+Informacion modulo 7
+Slot: 6
+Modelo: WS-F6K-PFC3BXL
+Numero de serie: SAL160534W7
+Descripcion: Policy Feature Card 3       
+
+Informacion modulo 8
+Slot: 6
+Modelo: WS-SUP720
+Numero de serie: SAL1606375H
+Descripcion: MSFC3 Daughterboard         
+
+Informacion modulo 9
+Slot: 7
+Modelo: WS-F6700-DFC3BXL
+Numero de serie: SAD101402FA
+Descripcion: Distributed Forwarding Card 
+
+Informacion modulo 10
+Slot: 8
+Modelo: WS-F6700-DFC3CXL
+Numero de serie: SAL14470DEB
+Descripcion: Distributed Forwarding Card 
+
+
+

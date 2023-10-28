@@ -1,4 +1,4 @@
-root@back-discoverit:~# ssh careit@10.5.2.133
+root@back-discoverit:~# ssh careit@10.5.3.186
 
 
 "Esta accediendo a un sistema privado.
@@ -10,7 +10,10 @@ En caso de que este uso revele una posible actividad delictiva o no etica,
 el personal de seguridad puede proporcionar la evidencia de
 para aplicar medidas disciplinarias pertinentes."
 
-(careit@10.5.2.133) password:
+(careit@10.5.3.186) password:
+(careit@10.5.3.186) Enter old password:
+(careit@10.5.3.186) Enter new password:
+(careit@10.5.3.186) Enter new password confirmation:
 
 
 
@@ -34,179 +37,263 @@ CURIOSITY ENHANCES DECISIONS
 CURIOSITY INCREASES YOUR KNOWLEDGE
 CURIOSITY CLEARS DOUBTS
 WE LOVE IT!!!
-QRA-KIO-SWCO01#show module
-Mod Ports Card Type                              Model              Serial No.
---- ----- -------------------------------------- ------------------ -----------
-  1    8  CEF720 8 port 10GE with DFC            WS-X6708-10GE      SAL1530L0F9
-  2    8  CEF720 8 port 10GE with DFC            WS-X6708-10GE      SAL12426L0J
-  3   24  CEF720 24 port 1000mb SFP              WS-X6724-SFP       SAL1117MT3N
-  5    2  Supervisor Engine 720 (Active)         WS-SUP720-3BXL     SAL1219PX62
-  6    2  Supervisor Engine 720 (Hot)            WS-SUP720-3BXL     SAD110505S7
 
-Mod MAC addresses                       Hw    Fw           Sw           Status
---- ---------------------------------- ------ ------------ ------------ -------
-  1  30e4.dbf0.47f0 to 30e4.dbf0.47f7   2.3   12.2(18r)S1  15.1(2)SY6   Ok
-  2  0023.5e7f.33e0 to 0023.5e7f.33e7   1.9   12.2(18r)S1  15.1(2)SY6   Ok
-  3  001b.54b4.7958 to 001b.54b4.796f   2.5   12.2(14r)S5  15.1(2)SY6   Ok
-  5  0016.9de6.91dc to 0016.9de6.91df   5.14  8.5(4)       15.1(2)SY6   Ok
-  6  0017.944a.79d8 to 0017.944a.79db   5.3   8.4(2)       15.1(2)SY6   Ok
+56A-KIO-RTIN03#show inventory
+56A-KIO-RTIN03#show inventory r
+56A-KIO-RTIN03#show inventory raw
+NAME: "Chassis", DESCR: "Cisco ASR1001 Chassis w/o IDC"
+PID: ASR1001           , VID: V03, SN: SSI17340A6X
 
-Mod  Sub-Module                  Model              Serial       Hw     Status
----- --------------------------- ------------------ ----------- ------- -------
-  1  Distributed Forwarding Card WS-F6700-DFC3CXL   SAD114201LW  1.6    Ok
-  2  Distributed Forwarding Card WS-F6700-DFC3CXL   SAL12437EPY  1.8    Ok
-  3  Distributed Forwarding Card WS-F6700-DFC3BXL   SAL1114KQC1  5.3    Ok
-  5  Policy Feature Card 3       WS-F6K-PFC3BXL     SAL1410CKNT  1.12   Ok
-  5  MSFC3 Daughterboard         WS-SUP720          SAL1219Q04L  3.5    Ok
-  6  Policy Feature Card 3       WS-F6K-PFC3BXL     SAD110503ZM  1.8    Ok
-  6  MSFC3 Daughterboard         WS-SUP720          SAD10490660  2.6    Ok
+NAME: "Power Supply Bay 0", DESCR: "Power Supply Bay"
+PID:                   , VID:    , SN:
 
-Mod  Online Diag Status
----- -------------------
-  1  Pass
-  2  Pass
-  3  Pass
-  5  Pass
-  6  Pass
-QRA-KIO-SWCO01#
-QRA-KIO-SWCO01#show idprom all
-IDPROM for backplane #0
-  (FRU is 'Catalyst 6500 9-slot backplane')
-  OEM String = 'Cisco Systems'
-  Product Number = 'WS-C6509-E'
-  Serial Number = 'SMC11200063'
-  Manufacturing Assembly Number = '73-9221-05'
-  Manufacturing Assembly Revision = 'A0'
-  Hardware Revision = 1.3
-  Current supplied (+) or consumed (-) =  -
+NAME: "Power Supply Module 0", DESCR: "Cisco ASR1001 AC Power Supply"
+PID: ASR1001-PWR-AC    , VID: V02, SN: 
 
-IDPROM for power-supply #1
-  (FRU is 'AC power supply, 6000 watt')
-  OEM String = 'Cisco Systems, Inc'
-  Product Number = 'WS-CAC-6000W'
-  Serial Number = 'AZS11200CH0'
-  Manufacturing Assembly Number = '341-0092-04'
-  Manufacturing Assembly Revision = 'A0'
-  Hardware Revision = 1.3
-  Current supplied (+) or consumed (-) = 63.60A
+NAME: "Power Supply 0", DESCR: "Power Supply"
+PID:                   , VID:    , SN:
 
-IDPROM for power-supply #2
-  (FRU is 'AC power supply, 6000 watt')
-  OEM String = 'Cisco Systems, Inc'
-  Product Number = 'WS-CAC-6000W'
-  Serial Number = 'AZS11200CHP'
-  Manufacturing Assembly Number = '341-0092-04'
-  Manufacturing Assembly Revision = 'A0'
-  Hardware Revision = 1.3
-  Current supplied (+) or consumed (-) = 63.60A
+NAME: "Fan 0/0", DESCR: "Fan"
+PID:                   , VID:    , SN:
 
-IDPROM for VTT #2
-  (FRU is 'VTT-E FRU')
-  OEM String = 'Cisco Systems'
-  Product Number = 'WS-C6K-VTT-E'
-  Serial Number = 'SMT1113D442'
-  Manufacturing Assembly Number = '73-9630-01'
-  Manufacturing Assembly Revision = 'A0'
-  Hardware Revision = 1.0
-  Current supplied (+) or consumed (-) =  -
+NAME: "PEM Iout P0/0", DESCR: "PEM Iout"
+PID:                   , VID:    , SN:
 
-IDPROM for EARL #2
-  (FRU is 'Distributed Forwarding Card 3')
-  OEM String = 'Cisco Systems, Inc.'
-  Product Number = 'WS-F6700-DFC3CXL'
-  Serial Number = 'SAL12437EPY'
+NAME: "PEM Vout P0/1", DESCR: "PEM Vout"
+PID:                   , VID:    , SN:
 
-QRA-KIO-SWCO01#show environment
-environmental alarms:
-  no alarms
+NAME: "PEM Vin P0/2", DESCR: "PEM Vin"
+PID:                   , VID:    , SN:
 
-backplane: operating clock count: 2
-  operating VTT count: 3
-  operating fan count: 1
+NAME: "Temp: Inlet P0/3", DESCR: "Temp: Inlet"
+PID:                   , VID:    , SN:
 
-fan-tray 1:
-  fan-tray 1 type: WS-C6509-E-FAN
-  fan-tray 1 mode: High-power
-  fan-tray 1 fan-fail: OK
-VTT 1:
-  VTT 1 OK: OK
-  VTT 1 outlet temperature: 26C
-VTT 2:
-  VTT 2 OK: OK
-  VTT 2 outlet temperature: 30C
-VTT 3:
-  VTT 3 OK: OK
-  VTT 3 outlet temperature: 28C
-clock 1:
-  clock 1 OK: OK, clock 1 clock-inuse: in-use
-clock 2:
-  clock 2 OK: OK, clock 2 clock-inuse: not-in-use
-power-supply 1:
-  power-supply 1 fan-fail: OK
-  power-supply 1 power-input: AC high
-  power-supply 1 power-output-mode: high
-  power-supply 1 incompatible with fan: OK
-  power-supply 1 power-output-fail: OK
+NAME: "Temp: Internal P0/4", DESCR: "Temp: Internal"
+PID:                   , VID:    , SN:
 
-power-supply 2:
-  power-supply 2 fan-fail: OK
-  power-supply 2 power-input: AC high
-  power-supply 2 power-output-mode: high
-  power-supply 2 incompatible with fan: OK
-  power-supply 2 power-output-fail: OK
+NAME: "Power Supply Bay 1", DESCR: "Power Supply Bay"
+PID:                   , VID:    , SN:
 
-module 1:
-  module 1 power-output-fail: OK
-  module 1 outlet temperature: 48C
-  module 1 inlet temperature: 34C
-  module 1 aux-1 temperature: 48C
-  module 1 aux-2 temperature: 37C
-  module 1 asic-1 temperature: 71C
-  module 1 asic-2 temperature: 69C
-  module 1 EARL outlet temperature: 36C
+NAME: "Power Supply Module 1", DESCR: "Cisco ASR1001 AC Power Supply"
+PID: ASR1001-PWR-AC    , VID: V02, SN: MP51734003G
+
+NAME: "Power Supply 1", DESCR: "Power Supply"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 1/0", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "PEM Iout P1/0", DESCR: "PEM Iout"
+PID:                   , VID:    , SN:
+
+NAME: "PEM Vout P1/1", DESCR: "PEM Vout"
+PID:                   , VID:    , SN:
+
+NAME: "PEM Vin P1/2", DESCR: "PEM Vin"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Inlet P1/3", DESCR: "Temp: Inlet"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Internal P1/4", DESCR: "Temp: Internal"
+PID:                   , VID:    , SN:
+
+NAME: "Fan Tray", DESCR: "Cisco ASR1001 Fan Tray"
+PID: ASR1001-FANTRAY   , VID:    , SN:
+
+NAME: "Fan 2/0", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/1", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/2", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/3", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/4", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/5", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "Fan 2/6", DESCR: "Fan"
+PID:                   , VID:    , SN:
+
+NAME: "module 0", DESCR: "Cisco ASR1001 SPA Interface Processor"
+PID: ASR1001           , VID:    , SN:
+
+NAME: "subslot 0/1", DESCR: "SPA Bay"
+PID:                   , VID:    , SN:
+
+NAME: "SPA subslot 0/0", DESCR: "4-port Gigabit Ethernet Shared Port Adapter"
+PID: ASR1001           , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver container 0", DESCR: "subslot 0/0 transceiver container 0"
+PID:                   , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver 0", DESCR: "GE T"
+PID: SP7041-E          , VID: E   , SN: MTC174401P4
+
+NAME: "GigabitEthernet0/0/0", DESCR: "ASR1001"
+PID:                   , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver container 1", DESCR: "subslot 0/0 transceiver container 1"
+PID:                   , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver 1", DESCR: "GE T"
+PID: SP7041-E          , VID: E   , SN: MTC174102VF
+
+NAME: "GigabitEthernet0/0/1", DESCR: "ASR1001"
+PID:                   , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver container 2", DESCR: "subslot 0/0 transceiver container 2"
+PID:                   , VID:    , SN:
+
+NAME: "subslot 0/0 transceiver container 3", DESCR: "subslot 0/0 transceiver container 3"
+PID:                   , VID:    , SN:
+
+NAME: "module R0", DESCR: "Cisco ASR1001 Route Processor"
+PID: ASR1001           , VID: V03, SN: JAE17420PKJ
+
+NAME: "usb R0/0", DESCR: "USB Port"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VMA R0/0", DESCR: "V1: VMA"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VMB R0/1", DESCR: "V1: VMB"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VMC R0/2", DESCR: "V1: VMC"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VMD R0/3", DESCR: "V1: VMD"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VME R0/4", DESCR: "V1: VME"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VMF R0/5", DESCR: "V1: VMF"
+PID:                   , VID:    , SN:
+
+NAME: "V1: 12v R0/6", DESCR: "V1: 12v"
+PID:                   , VID:    , SN:
+
+NAME: "V1: VDD R0/7", DESCR: "V1: VDD"
+PID:                   , VID:    , SN:
+
+NAME: "V1: GP1 R0/8", DESCR: "V1: GP1"
+PID:                   , VID:    , SN:
+
+NAME: "V1: GP2 R0/9", DESCR: "V1: GP2"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VMA R0/10", DESCR: "V2: VMA"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VMB R0/11", DESCR: "V2: VMB"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VMC R0/12", DESCR: "V2: VMC"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VMD R0/13", DESCR: "V2: VMD"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VMF R0/14", DESCR: "V2: VMF"
+PID:                   , VID:    , SN:
+
+NAME: "V2: 12v R0/15", DESCR: "V2: 12v"
+PID:                   , VID:    , SN:
+
+NAME: "V2: VDD R0/16", DESCR: "V2: VDD"
+PID:                   , VID:    , SN:
+
+NAME: "V2: GP1 R0/17", DESCR: "V2: GP1"
+PID:                   , VID:    , SN:
+
+NAME: "V2: GP2 R0/18", DESCR: "V2: GP2"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Middle R0/19", DESCR: "Temp: Middle"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: CPU Die R0/20", DESCR: "Temp: CPU Die"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Top Left R0/21", DESCR: "Temp: Top Left"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Asic1 R0/22", DESCR: "Temp: Asic1"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Inlet R0/23", DESCR: "Temp: Inlet"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Asic3 R0/24", DESCR: "Temp: Asic3"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Rear R0/25", DESCR: "Temp: Rear"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Asic2 R0/26", DESCR: "Temp: Asic2"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: Mid Frnt R0/27", DESCR: "Temp: Mid Frnt"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: MCH Die R0/28", DESCR: "Temp: MCH Die"
+PID:                   , VID:    , SN:
+
+NAME: "Temp: FC  R0/29", DESCR: "Temp: FC "
+PID:                   , VID:    , SN:
+
+NAME: "NME R0", DESCR: "Network Management Ethernet"
+PID:                   , VID:    , SN:
+
+NAME: "cpu R0/0", DESCR: "CPU 0 of module R0"
+PID:                   , VID:    , SN:
+
+NAME: "module F0", DESCR: "Cisco ASR1001 Embedded Services Processor"
+PID: ASR1001           , VID:    , SN:
+
+NAME: "qfp F0/0", DESCR: "QFP 0 of module F0"
+PID:                   , VID:    , SN:
+
+NAME: "Crypto Asic F0/0", DESCR: "Asic 0 of moduel F0"
+PID:                   , VID:    , SN:
 
 
-chassis connector rating: 1302.00 Watts (31.00 Amps @ 42V)
-chassis auxiliary connector rating: 2016.00 Watts (48.00 Amps @ 42V)
-module 1
-  module 1 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
-  module 1 power consumption:  473.76 Watts (11.28 Amps @ 42V)
-module 2
-  module 2 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
-  module 2 power consumption:  473.76 Watts (11.28 Amps @ 42V)
-module 3
-  module 3 connector rating: 2016.00 Watts (48.00 Amps @ 42V)
-  module 3 power consumption:  232.26 Watts ( 5.53 Amps @ 42V)
-module 5
-  module 5 connector rating: 1260.00 Watts (30.00 Amps @ 42V)
-  module 5 power consumption:  328.44 Watts ( 7.82 Amps @ 42V)
-module 6
-  module 6 connector rating: 1260.00 Watts (30.00 Amps @ 42V)
-  module 6 power consumption:  328.44 Watts ( 7.82 Amps @ 42V)
-
-chassis per slot cooling capacity: 94 cfm
-ambient temperature: < 55C
-  module 1 cooling requirement: 84 cfm
-  module 2 cooling requirement: 84 cfm
-  module 3 cooling requirement: 70 cfm
-  module 5 cooling requirement: 35 cfm
-  module 6 cooling requirement: 35 cfm
-
-QRA-KIO-SWCO01#show version
-Cisco IOS Software, s72033_rp Software (s72033_rp-ADVENTERPRISEK9-M), Version 15.1(2)SY6, RELEASE SOFTWARE (fc4)
+56A-KIO-RTIN03#show version
+Cisco IOS XE Software, Version 03.13.04.S - Extended Support Release
+Cisco IOS Software, ASR1000 Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 15.4(3)S4, RELEASE SOFTWARE (fc3)
 Technical Support: http://www.cisco.com/techsupport
 Copyright (c) 1986-2015 by Cisco Systems, Inc.
-Compiled Thu 10-Sep-15 01:59 by prod_rel_team
+Compiled Mon 05-Oct-15 10:12 by mcpre
 
-ROM: System Bootstrap, Version 12.2(17r)SX7, RELEASE SOFTWARE (fc1)
-BOOTLDR: Cisco IOS Software, s72033_rp Software (s72033_rp-ADVENTERPRISEK9-M), Version 15.1(2)SY6, RELEASE SOFTWARE (fc4)
 
- QRA-KIO-SWCO01 uptime is 6 years, 43 weeks, 5 days, 12 hours, 34 minutes
-Uptime for this control processor is 6 years, 3 weeks, 3 days, 11 hours, 57 minutes
-System returned to ROM by Stateful Switchover at 04:02:37 UTC Wed May 29 2013 (SP by power on)
-System restarted at 22:39:08 MEX Mon Mar 13 2017
-System image file is "disk0:s72033-adventerprisek9-mz.151-2.SY6.bin"
-Last reload reason: Unknown reason
+Cisco IOS-XE software, Copyright (c) 2005-2015 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+56A-KIO-RTIN03 uptime is 5 years, 6 weeks, 1 day, 4 hours, 33 minutes
+Uptime for this control processor is 5 years, 6 weeks, 1 day, 4 hours, 34 minutes
+System returned to ROM by reload at 21:43:03 CST Thu Mar 16 2017
+System restarted at 08:01:52 Mexico Sat Feb 24 2018
+System image file is "bootflash:asr1001-universalk9.03.13.04.S.154-3.S4-ext.bin"
+Last reload reason: PowerOn
 
 
 
@@ -225,19 +312,72 @@ http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
 If you require further assistance please contact us by sending email to
 export@cisco.com.
 
-cisco WS-C6509-E (R7000) processor (revision 1.3) with 983008K/65536K bytes of memory.
-Processor board ID SMC11200063
-SR71000 CPU at 600Mhz, Implementation 0x504, Rev 1.2, 512KB L2 Cache
-Last reset from s/w reset
-2 Virtual Ethernet interfaces
-28 Gigabit Ethernet interfaces
-16 Ten Gigabit Ethernet interfaces
-1917K bytes of non-volatile configuration memory.
+License Level: advipservices
+License Type: Permanent
+Next reload license Level: advipservices
 
-65536K bytes of Flash internal SIMM (Sector size 512K).
+cisco ASR1001 (1RU) processor (revision 1RU) with 6823503K/6147K bytes of memory.
+Processor board ID SSI17340A6X
+4 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+16777216K bytes of physical memory.
+7741439K bytes of eUSB flash at bootflash:.
+
 Configuration register is 0x2102
 
-QRA-KIO-SWCO01#exit
-Connection to 10.5.2.133 closed by remote host.
-Connection to 10.5.2.133 closed.
-root@back-discoverit:~#
+56A-KIO-RTIN03#
+56A-KIO-RTIN03#show modu
+56A-KIO-RTIN03#show modu
+56A-KIO-RTIN03#show pow
+56A-KIO-RTIN03#show pow
+56A-KIO-RTIN03#show run
+Building configuration...
+
+Current configuration : 20572 bytes
+!
+! Last configuration change at 17:06:46 Mexico Mon Apr 3 2023 by ggarcia
+! NVRAM config last updated at 17:06:48 Mexico Mon Apr 3 2023 by ggarcia
+!
+version 15.4
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+no platform punt-keepalive disable-kernel-core
+!
+hostname 56A-KIO-RTIN03
+!
+boot-start-marker
+boot system flash bootflash:asr1001-universalk9.03.13.04.S.154-3.S4-ext.bin
+boot system flash bootflash:asr1001-universalk9.03.10.01.S.153-3.S1-ext.bin
+boot-end-marker
+!
+aqm-register-fnf
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+logging buffered 409600
+enable secret 5 $1$WTus$Oylo0W1qnqJWQUHDNKF8D/
+!
+aaa new-model
+!
+!
+aaa group server tacacs+ ISE
+ server-private 10.5.2.110 single-connection key 7 015752070E20575F64
+ server-private 10.5.4.110 single-connection key 7 0865184D5C32544757
+ ip vrf forwarding Mgmt-intf
+ ip tacacs source-interface GigabitEthernet0
+!
+aaa authentication login default group ISE local
+aaa authentication login CONSOLE line local
+aaa authorization exec default group ISE local
+aaa authorization commands 0 default group ISE local
+aaa authorization commands 1 default group ISE local
+aaa authorization commands 15 default group ISE local
+aaa accounting exec default start-stop group ISE
+aaa accounting commands 0 default start-stop group ISE

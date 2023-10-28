@@ -32,21 +32,34 @@ def main(output_file):
         powerSupply,cantidadPowerSupply = power_supply_cardsCisco(switchDiccionario['Modelo'],device)
         powerString,powerDiccionario=formato_power_supply(powerSupply,cantidadPowerSupply,switchDiccionario['Modelo'])
         print(powerString)
-            
         
-        #power_supply_data, cantidad = power_supply_cardsCisco(device) #ok
-        fan = fan_cardsCisco(device) # ok
-        cardsCisco(device) #mafer
-        modulos,cantidadModulo = modulosCisco(device,switchDiccionario['Modelo'])
-        moduloString, moduloDiccionario = formato_modulos(modulos,cantidadModulo,switchDiccionario['Modelo'])
-        print(moduloString)
-        print(f'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')   
+        
+        ventiladores,cantidadFan = ventiladoresCisco(device,switchDiccionario['Modelo'])
+        if not ventiladores:
+            ventiladores,cantidad = ventiladores_cisco(device,switchDiccionario['Modelo'])
+            fanString,fanDiccionario = formato_fan(ventiladores,cantidad,switchDiccionario['Modelo'])
+            print(fanString)
+        else: 
+            fanString,fanDiccionario = formato_ventiladores(ventiladores,cantidadFan,switchDiccionario['Modelo'])
+            print(fanString)
+        
+        
+        cards,cantidadCards = cardsCisco(device)
+        cardsString, cardsDiccionario = formato_cards(cards,cantidadCards,switchDiccionario['Modelo'])
+        #print(cardsString) 
+        
+        modulos,cantidadModulo = subModulosCisco(device,switchDiccionario['Modelo'])
+        moduloString, moduloDiccionario = formato_sub(modulos,cantidadModulo,switchDiccionario['Modelo'])
+        #print(moduloString)
+        
+        modString = cardsString + '\n' + moduloString
+        
+        documentacionEquiposParseo(switchDiccionario,chasisString,powerString,fanString,modString,output_file) 
     else:   
         Switch = re.findall('(N5K|N7K|N9K)',device)
         switchN2K = re.findall('N2K',device)
         if Switch:
             print(f'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SWITCH INFORMACIÓN PIEZAS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')   
-            print(f'\n################################## INFORMACIÓN POWER SUPPLY ##################################\n')
             powerSupply,cantidadPowerSupply = power_Supply(switchDiccionario['Modelo'],device)
             powerString,powerDiccionario=formato_power_supply(powerSupply,cantidadPowerSupply,switchDiccionario['Modelo'])
             print(powerString)
@@ -61,7 +74,6 @@ def main(output_file):
                     switchn2k(device,switchDiccionario['Version del firmware'],switchDiccionario['Hostname'])   
         else:
             print(f'\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SWITCH INFORMACIÓN PIEZAS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')   
-            print(f'\n################################## INFORMACIÓN POWER SUPPLY ##################################\n')
             powerSupply,cantidadPowerSupply=obtener_cisco_power_supply(switchDiccionario['Modelo'],device)
             powerString,powerDiccionario=formato_power_supply(powerSupply,cantidadPowerSupply,switchDiccionario['Modelo'])
             print(powerString)
@@ -190,6 +202,7 @@ def crear_carpeta(nombre):
         print("Se ha creado el directorio: %s " % directorio)
 
 def insertar(parse,infoChasis, infoPower,infoFan, infoModulo, archivo, carpeta):
+    
 
     try:
         # Solo guarda en el archivo la cadena ingresada
@@ -309,7 +322,7 @@ def modeloCisco(output):
                 
          
         expresionesModelo = ("Product Number = ([A-Za-z]{2,2}\-[A-Za-z0-9]+\-[A-Za-z0-9]+)",
-                             "Product Number = '([A-Za-z]{2,2}\-[A-Za-z0-9]+\-[A-Za-z0-9]+)'",
+                             "[C|c][A-Za-z]{4,4}\s+([A-Za-z]{2,2}\-[A-Za-z0-9]+\-[A-Za-z0-9]+)",
                              "Model.+\s([A-Za-z]{2,2}\-[A-Za-z0-9]+\-[A-Za-z0-9]+)\s",
                              "Chassis Type : ([A-Za-z]{2,2}\-[A-Za-z0-9]+)"
                             )
@@ -498,6 +511,7 @@ supply que se encuentran en un Switch.
 """
 
 def formato_power_supply(power_supply_info,cantidad_power_supply,modelo):
+    print(f'#################################### POWER SUPPLY ####################################')        
     try:
         if modelo == 'WS-C4948-10GE':
             powerString = f"Cantidad de power supply: {cantidad_power_supply}\n\n"
@@ -513,9 +527,10 @@ def formato_power_supply(power_supply_info,cantidad_power_supply,modelo):
                 powerString += f"Informacion power supply {i}\n"
                 powerString += f"ID: {power_info['Modulo']}\n"
                 powerString += f"Descripcion: {power_info['Descripcion']}\n"
-                powerString += f"Modelo: {power_info['Product Number']}\n"
-                powerString += f"PID: {power_info['Numero de parte']}\n" 
+                powerString += f"Modelo: {power_info['Numero de parte']}\n" 
+                powerString += f"PID: {power_info['Product Number']}\n"
                 powerString += f"Numero de serie: {power_info['Numero de serie']}\n\n"
+                
             
         else:
             """ 
@@ -542,14 +557,14 @@ def formato_power_supply(power_supply_info,cantidad_power_supply,modelo):
             'Cantidad de power supply': cantidad_power_supply,
             'Informacion power supply': power_supply_info
         }
+        
+        
 
         return powerString,powerDiccionario
     except Exception as e:
         return {"Error": f"Error al procesar la información de las power supply: {str(e)}"}
 
 def obtener_cisco_power_supply(modelo,output):
-    print(f'#################################### POWER SUPPLY ####################################')        
-    
     try:
         # Utilizamos expresiones regulares para buscar información relevante
         
@@ -604,36 +619,6 @@ def obtener_cisco_power_supply(modelo,output):
                         
                         power_supply_info.append(power_info)
                     break
-            elif modelo == 'WS-C6509-E':
-                inicioExp = '[A-Za-z0-]{12,12}\s\#\d'
-                descripcion = '\((.+)\)'
-                product = '[A-Za-z]{7,7}\s[A-Za-z]{6,6}\s\=\s\'([A-Za-z0-9-]+)\''
-                serial = '[A-Za-z]{6,6}\s[A-Za-z]{6,6}\s\=\s\'([A-Za-z0-9-]+)\''
-                partNumber = '[A-Za-z]{13,13}\s[A-Za-z]{8,8}\s[A-Za-z]{6,6}\s\=\s\'([0-9\-]+)\''
-                
-                patter = f'({inicioExp})\s+{descripcion}\s.+\s+{product}\s+{serial}\s+{partNumber}'
-                matches = re.findall(patter, output)
-
-                if matches:
-                    # Creamos una lista de diccionarios para almacenar la información de cada suministro de energía
-                    power_supply_info = []
-                    for match in matches:
-                        modulo = match[0]
-                        descripcion = match[1]
-                        productNumber = match[2]
-                        sn = match[3]
-                        partNumber = match[4]
-                        
-                        power_info = {
-                            "Modulo": modulo,
-                            "Descripcion": descripcion,
-                            "Product Number": productNumber,
-                            "Numero de parte": partNumber,
-                            "Numero de serie": sn
-                        }
-                        
-                        power_supply_info.append(power_info)
-                    break
 
             else:
                 power_supply_info = []
@@ -663,6 +648,7 @@ un Switch.
 """
  
 def formato_fan(fan_info,cantidad_fan,modelo):
+    print(f'#################################### FAN ####################################')
     try:
         fanString = f"Cantidad de ventiladores es {cantidad_fan} en el equipo {modelo}\n\n"
         for i, fan_info in enumerate(fan_info, 1):
@@ -682,7 +668,6 @@ def formato_fan(fan_info,cantidad_fan,modelo):
         return {"Error": f"Error al procesar la información de las power supply: {str(e)}"}
 
 def ventiladores_cisco(output,modelo):
-    print(f'#################################### FAN ####################################')
     try:
         # Utilizamos expresiones regulares para buscar información relevante
         
@@ -740,7 +725,7 @@ def ventiladores_cisco(output,modelo):
         if not matches and not matchesModulo:
             dic_sin_repetir = []
             cantidad_fan = 0
-
+        
         return dic_sin_repetir,cantidad_fan
         
     except Exception as e:
@@ -774,7 +759,7 @@ def power_Supply(modelo,output):
                     pid = match[3]
                     sn = match[4]
                     
-                    power_info = {
+                    power_info = { 
                         "Modulo": modulo,
                         "Descripcion":descripcion,
                         "Numero de parte": pid,
@@ -800,9 +785,9 @@ def power_Supply(modelo,output):
         return dic_sin_repetir,cantidad_power_supply
     except Exception as e:
         return {"Error": f"Error al procesar la informacion de las power supply {str(e)}"}
-      
-
+    
 def formato_ventiladores(fan_info,cantidad_fan,modelo):
+    print(f'#################################### FAN ####################################')
     try:
         fanString = f"Cantidad de ventiladores es {cantidad_fan} en el equipo {modelo}\n\n"
         for i, fan_info in enumerate(fan_info, 1):
@@ -845,15 +830,13 @@ def formato_modulos(modulo_info,cantidad_modulo,modelo):
         return {"Error": f"Error al procesar la información de las power supply: {str(e)}"}
 
 def ventiladoresCisco(output,modelo):
-    print(f'#################################### FAN ####################################')
     try:
         # Utilizamos expresiones regulares para buscar información relevante
-        
-        expresionesFan = ('\"([A-Za-z0-9-]{4,4}\s\d+)\"\,\s+DESCR:\s+\"(.+[F|f][A-Za-z]{2,2}.+)\"\s+PID:\s+(([A-Z0-9\-\.]+|\s+)\s).+SN:\s+([A-Z0-9-]+|\s+)\s',
+        expresionesFan = ('\"(.+)\"\,\s+DESCR:\s+\"(.+[F|f][A-Za-z]{2,2}\s+[T|t][A-Za-z]{3,3}.+)\"\s+PID:\s+([A-Z0-9-]+|\s+)\s+.+SN:\s+(([A-Z0-9-]+|\s+)\s)',
+                          '\"([A-Za-z0-9-]{4,4}\s\d+)\"\,\s+DESCR:\s+\"(.+[F|f][A-Za-z]{2,2}.+)\"\s+PID:\s+(([A-Z0-9\-\.]+|\s+)\s).+SN:\s+([A-Z0-9-]+|\s+)\s',
                           '\"([F|f][A-Za-z]{2,2}\s+\d+)\"\,\s+DESCR:\s+\"([C|c][A-Za-z]{6,6}.+)\"\s+PID:\s+(([A-Z0-9\-\.]+|\s+)\s).+SN:\s+(.+)',
                           '\"([F|f][A-Za-z]{2,2}\s+\d+)\"\,\s+DESCR:\s+\"(.+[C|c][A-Za-z]{6,6}.+)\"\s+PID:\s+(([A-Z0-9\-\.]+|\s+)\s).+SN:\s+(.+)'
                           )
-                
         for expresion in expresionesFan:
             matches = re.findall(expresion, output)
             if matches:
@@ -1192,53 +1175,150 @@ numero de serie, numero de parte, version del FW, los datos de los power supply 
 
 """
 
-def cardsCisco(output): 
-    pattern = r'(\d+)\s+(\d+)\s+(.+?\s+.+?\s+\S+\s+\S+\s+\S+)\s+([^\s]{11,})\s+(\w+)\n'
-    results = re.findall(pattern, output)
-    for result in results:
-        modeloCard = result[3]
-        snCard = result[4]
-        slot = result[0]
-        npCard = modeloCard
-        print(f'\nEn el slot {slot} esta la tarjeta con el modelo: {modeloCard} numero de serie: {snCard} numero de parte: {npCard}')
-    return slot,modeloCard,snCard,npCard
- 
-def fan_cardsCisco(output):
-    print("##################### FAN CISCO MODULAR ###############################")
-    patter = r'([A-Z0-9-]+FAN).+\sPID:\s+([A-Z0-9-]+)\s.+?SN:\s([A-Z0-9-]+)\s'
-    
-    matches = re.findall(patter, output)
-    cantidad = 0
-    for match in matches:
-        modelo = match[0]
-        sn = match[2]
-        cantidad = cantidad + 1
-        np = match[1]
-        
-        print(f'\nInformación fan {cantidad}\nModelo: {modelo}\nNumero de serie: {sn}\nNumero de parte: {np}')
-    print(f'\nEl total de ventiladores es {cantidad}')  
 
-    return matches   
+def formato_cards(cards_info,cantidad_cards,modelo):
+    print(f'#################################### Tarjetas ####################################')
+    
+    try:
+        cardsString = f"Cantidad de tarjetas es {cantidad_cards} en el equipo {modelo}\n\n"
+        for i, cards_info in enumerate(cards_info, 1):
+            cardsString += f"Informacion tarjeta {i}\n"
+            cardsString += f"Slot: {cards_info['Slot']}\n"
+            cardsString += f"Numero de puertos: {cards_info['Numero de puertos']}\n"
+            cardsString += f"Modelo: {cards_info['Modelo']}\n"
+            cardsString += f"Numero de serie: {cards_info['Numero de serie']}\n"
+            cardsString += f"Descripcion: {cards_info['Descripcion']}\n\n"
+            
+            
+        # Crear el diccionario con la informacion obtenida de cada power supply
+        cardsDiccionario = {
+            'Cantidad de tarjetas': cantidad_cards,
+            'Informacion tarjetas': cards_info
+        }
+
+        
+
+        return cardsString,cardsDiccionario
+    except Exception as e:
+        return {"Error": f"Error al procesar la información de las tarjetas: {str(e)}"}
+
+
+def formato_sub(sub_info,cantidad_sub,modelo):
+    print(f'#################################### Sub Modulos ####################################')
      
+    try:
+        subString = f"Cantidad de sub-modulos es {cantidad_sub} en el equipo {modelo}\n\n"
+        for i, sub_info in enumerate(sub_info, 1):
+            subString += f"Informacion modulo {i}\n"
+            subString += f"Slot: {sub_info['Modulo']}\n"
+            subString += f"Modelo: {sub_info['Modelo']}\n"
+            subString += f"Numero de serie: {sub_info['Numero de serie']}\n"
+            subString += f"Descripcion: {sub_info['Descripcion']}\n\n"
+            
+            
+        # Crear el diccionario con la informacion obtenida de cada power supply
+        subDiccionario = {
+            'Cantidad de submodulos': cantidad_sub,
+            'Informacion submodulos': sub_info
+        }
+
+        
+
+        return subString,subDiccionario
+    except Exception as e:
+        return {"Error": f"Error al procesar la información de las tarjetas: {str(e)}"}
+
+def subModulosCisco(output,modelo):
+    try:
+    # Utilizamos expresiones regulares para buscar información relevante
+        expresionesSub = ('(\d+)\s+([A-Za-z].+)([V|v|W|w][A-Za-z0-9-]+)\s+([S|s][A-Za-z0-9-]+)\s+\d+\.\d+',
+                            '°'
+                          )
+                
+        for expresion in expresionesSub:
+            matches = re.findall(expresion, output)
+            if matches:
+                sub = []
+                for match in matches:
+                    modulo = match [0]
+                    descripcion = match[1]
+                    pid = match[2]
+                    sn = match[3]
+                    sub_info = {
+                        "Modulo": modulo,
+                        "Descripcion": descripcion,
+                        "Modelo": pid,
+                        "Numero de serie": sn
+                    }
+                    sub.append(sub_info)
+                    dic_sin_repetir_sub=[]
+                    for i in sub: 
+                        if i not in dic_sin_repetir_sub:
+                            dic_sin_repetir_sub.append(i)
+                        
+                    cantidad_sub = len(dic_sin_repetir_sub)  
+                break
+            else:
+                dic_sin_repetir_sub = []
+                cantidad_sub = 0
+                
+        return dic_sin_repetir_sub,cantidad_sub
+    except Exception as e:
+            print(f"Ah Ocurrido un error: {e}")
+            return 0
+
 def cardsCisco(output):
-    print("################### TARJETAS CISCO MODULAR #############################")
-    pattern = r'(\d+)\s+(\d+)\s+(.+?\s+.+?\s+\S+\s+\S+\s+\S+)\s+([^\s]{11,})\s+(\w+)\n'
-    results = re.findall(pattern, output)
-    for result in results:
-        modeloCard = result[3]
-        snCard = result[4]
-        slot = result[0]
-        print(f'En el slot {slot} esta la tarjeta con el \nModelo: {modeloCard}\nNumero de serie: {snCard}\n')
-    return results
+    try:
+        # Utilizamos expresiones regulares para buscar información relevante
+        expresionesCards = ('(\d+)\s+(\d+)\s+(.+)([V|v|W|w][A-Za-z0-9-]+)\s+([S|s][A-Za-z0-9-]+)',
+                            '°'
+                          )
+                
+        for expresion in expresionesCards:
+            matches = re.findall(expresion, output)
+            if matches:
+                cards = []
+                for match in matches:
+                    slot = match [0]
+                    ports = match[1]
+                    descripcion = match[2]
+                    pid = match[3]
+                    sn = match[4]
+                    cards_info = {
+                        "Slot": slot,
+                        "Numero de puertos": ports,
+                        "Descripcion": descripcion,
+                        "Modelo": pid,
+                        "Numero de serie": sn
+                    }
+                    cards.append(cards_info)
+                    dic_sin_repetir=[]
+                    for i in cards: 
+                        if i not in dic_sin_repetir:
+                            dic_sin_repetir.append(i)
+                        
+                    cantidad_cards = len(dic_sin_repetir)  
+                break
+            else:
+                dic_sin_repetir = []
+                cantidad_cards = 0
+                
+        
+        return dic_sin_repetir,cantidad_cards
+        
+    except Exception as e:
+            print(f"Ah Ocurrido un error: {e}")
+            return 0
+                
+                
+
        
 def power_supply_cardsCisco(modelo,output):
     try:
-        print(f'#################################### POWER SUPPLY ####################################')
         # Utilizamos expresiones regulares para buscar información relevante
         
-        expresionesPower = ('\"(.+)\"\,\s+DESCR:\s+\"(.+[P|p][A-Za-z]{4,4}\s+[S|s][A-Za-z]{5,5}\,.+)\"\sPID:\s+(([A-Z0-9-]+|\s+)\s).+SN:\s([A-Z0-9-]+|\s+)\s',
-                            '°'
-                            
+        expresionesPower = ('\"(.+)\"\,\s+DESCR:\s+\"(.+[P|p][A-Za-z]{4,4}\s+[S|s][A-Za-z]{5,5}\,.+)\"\sPID:\s+([A-Z0-9-]+|\s+)\s.+SN:\s(([A-Z0-9-]+|\s+)\s)',
+                            '([P|p][A-Za-z]{4,4}-[S|s][A-Za-z]{5,5}\s+.+\d)\s+\(.+\'(.+)\'\)\s+.+\s+[P|p][A-Za-z]{6,6}\s+[N|n][A-Za-z]{5,5}\s+\=\s+\'([A-Z0-9-]+|\s+)\'\s+.+\s+[S|s][A-Za-z]{5,5}\s+[N|n][A-Za-z]{5,5}\s+\=\s+\'([A-Z0-9-]+|\s+)\'\s+.+\s+[M|m][A-Za-z]{12,12}\s.+[N|n][A-Za-z]{5,5}\s+\=\s+\'([0-9-]+|\s+)\''
                             )
         
         for expresion in expresionesPower:
@@ -1249,12 +1329,13 @@ def power_supply_cardsCisco(modelo,output):
                 for match in matches:
                     modulo = match[0]
                     descripcion = match[1]
-                    pid = match[3]
-                    sn = match[4]
-                    
+                    pid = match[2]
+                    sn = match[3]
+                    part=match[4]
                     power_info = {
                         "Modulo": modulo,
                         "Descripcion":descripcion,
+                        "Product Number": part,
                         "Numero de parte": pid,
                         "Numero de serie": sn
                     }
@@ -1263,9 +1344,9 @@ def power_supply_cardsCisco(modelo,output):
                 break
             else:
                 power_supply_info = []
-                cantidad_power_supply = 0  
-                
-                
+                cantidad_power_supply = 0
+        
+
         #las siguientes lineas de codigo son para quitar los elementos repetidos en un diccionario        
         dic_sin_repetir=[]
         for i in power_supply_info:
@@ -1279,9 +1360,6 @@ def power_supply_cardsCisco(modelo,output):
     except Exception as e:
         return {"Error": f"Error al procesar la informacion de las power supply {str(e)}"}
 
-
-
- 
 def detectarMarca(cadena):
     if re.search(r'brocade', cadena, re.IGNORECASE):
         return "brocade"

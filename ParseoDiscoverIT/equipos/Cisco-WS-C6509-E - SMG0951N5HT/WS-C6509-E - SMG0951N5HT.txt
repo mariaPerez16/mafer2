@@ -6,53 +6,68 @@ Numero de parte: WS-C6509-E
 Version: 12.2(33)SXH3
 Hostname: SW15
 
-Cantidad de power supply: 1
+Cantidad de power supply: 2
 
 Informacion power supply 1
-ID: C3CXL Policy Feature Card 3 sub-module of 5
-Descripcion: VS-F6K-PFC3CXL Policy Feature Card 3 Rev. 1.0
-PID: VS-F6K-PFC3CXL
-Numero de serie: SAL123731U7
+ID: PS 1 WS-CAC-6000W
+Descripcion: AC power supply, 6000 watt 1
+PID: WS-CAC-6000W
+Numero de serie: AZS11430PTT
 
 
-Cantidad de ventiladores es 4 en el equipo WS-C6509-E 
+Informacion power supply 2
+ID: PS 2 WS-CAC-6000W
+Descripcion: AC power supply, 6000 watt 2
+PID: WS-CAC-6000W
+Numero de serie: AZS12460QS6
+
+
+
+Cantidad de ventiladores es 1 en el equipo WS-C6509-E 
 
 Informacion ventilador 1
-ID: FRU 1
-Modelo: WS-C6509-E 
-
-Informacion ventilador 2
-ID: FRU 2
-Modelo: WS-C6509-E 
-
-Informacion ventilador 3
-ID: FRU 3
-Modelo: WS-C6509-E 
-
-Informacion ventilador 4
-ID: FAN 1
-Modelo: WS-C6509-E 
+ID: WS-C6509-E-FAN 1
+Modelo: WS-C6509-E-FAN
+Numero de serie: DCH09480304
+Descripcion: Enhanced 9-slot Fan Tray 1
 
 
-Cantidad de modulos es 3 en el equipo WS-C6509-E 
+Cantidad de tarjetas es 2 en el equipo WS-C6509-E 
+
+Informacion tarjeta 1
+Slot: 1
+Numero de puertos: 48
+Modelo: WS-X6748-GE-TX
+Numero de serie: SAD115100WP
+Descripcion: CEF720 48 port 10/100/1000mb Ethernet  
+
+Informacion tarjeta 2
+Slot: 5
+Numero de puertos: 5
+Modelo: VS-S720-10G
+Numero de serie: SAL123738LH
+Descripcion: Supervisor Engine 720 10GE (Active)    
+
+
+Cantidad de sub-modulos es 3 en el equipo WS-C6509-E 
 
 Informacion modulo 1
-ID: WS-F6700-CFC Centralized Forwarding Card sub-module of 1
-Modelo: WS-F6700-CFC 
+Slot: 1
+Modelo: WS-F6700-CFC
 Numero de serie: SAD115102FB
-Descripcion: WS-F6700-CFC Centralized Forwarding Card Rev. 4.0
+Descripcion: Centralized Forwarding Card 
 
 Informacion modulo 2
-ID: msfc sub-module of 5
-Modelo: VS-F6K-MSFC3 
-Numero de serie: SAL12373AGW
-Descripcion: VS-F6K-MSFC3 MSFC3 Daughterboard Rev. 1.0
+Slot: 5
+Modelo: VS-F6K-PFC3CXL
+Numero de serie: SAL123731U7
+Descripcion: Policy Feature Card 3       
 
 Informacion modulo 3
-ID: VS-F6K-PFC3CXL Policy Feature Card 3 sub-module of 5
-Modelo: VS-F6K-PFC3CXL 
-Numero de serie: SAL123731U7
-Descripcion: VS-F6K-PFC3CXL Policy Feature Card 3 Rev. 1.0
+Slot: 5
+Modelo: VS-F6K-MSFC3
+Numero de serie: SAL12373AGW
+Descripcion: MSFC3 Daughterboard         
 
 
 
